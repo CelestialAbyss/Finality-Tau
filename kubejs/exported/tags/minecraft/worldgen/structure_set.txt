@@ -1,0 +1,102 @@
+To refresh this file, delete it and run /reload command again! Last updated: May 13, 2023, 9:47:20 PM
+
+#idas:small_avoid
+- minecraft:villages (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_uncommon (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:villages (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_uncommon (from idasconfig-1.7.1-1.19.2.zip)
+
+#idas:common_avoid
+- minecraft:villages (from idas_forge-1.7.1+1.19.2.jar)
+- idas:ancient_mines (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_desert_rare (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_ocean (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_rare (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_small (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_uncommon (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_underground (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_underground_rare (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:villages (from idasconfig-1.7.1-1.19.2.zip)
+- idas:ancient_mines (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_desert_rare (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_ocean (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_rare (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_small (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_uncommon (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_underground (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_underground_rare (from idasconfig-1.7.1-1.19.2.zip)
+
+#idas:nether_avoid
+- minecraft:nether_complexes (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_small_nether (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:nether_complexes (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_small_nether (from idasconfig-1.7.1-1.19.2.zip)
+
+#cataclysm:soul_black_smith_avoid
+- cataclysm:burning_arena (from L_Enders_Cataclysm-0.84-1.19.2.jar)
+- minecraft:nether_complexes (from L_Enders_Cataclysm-0.84-1.19.2.jar)
+
+#idas:underground_avoid
+- minecraft:villages (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:villages (from idasconfig-1.7.1-1.19.2.zip)
+
+#idas:small_underground_avoid
+- minecraft:villages (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_underground (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:villages (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_underground (from idasconfig-1.7.1-1.19.2.zip)
+
+#cataclysm:burning_arena_avoid
+- cataclysm:soul_black_smith (from L_Enders_Cataclysm-0.84-1.19.2.jar)
+- minecraft:nether_complexes (from L_Enders_Cataclysm-0.84-1.19.2.jar)
+
+#idas:uncommon_avoid
+- minecraft:villages (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:villages (from idasconfig-1.7.1-1.19.2.zip)
+
+#betterfortresses:fortress_avoid
+- minecraft:nether_complexes (from YungsBetterNetherFortresses-1.19.2-Forge-1.0.5.jar)
+
+#idas:rare_avoid
+- minecraft:villages (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_small (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_uncommon (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_underground (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_underground_rare (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:villages (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_small (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_uncommon (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_underground (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_underground_rare (from idasconfig-1.7.1-1.19.2.zip)
+
+#idas:ancient_mines_avoid
+- minecraft:villages (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:villages (from idasconfig-1.7.1-1.19.2.zip)
+
+#idas:ocean_avoid
+- minecraft:monument (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:shipwreck (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:monument (from idasconfig-1.7.1-1.19.2.zip)
+- minecraft:shipwreck (from idasconfig-1.7.1-1.19.2.zip)
+
+#idas:desert_rare_avoid
+- minecraft:villages (from idas_forge-1.7.1+1.19.2.jar)
+- idas:ancient_mines (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_ocean (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_rare (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_small (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_uncommon (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_underground (from idas_forge-1.7.1+1.19.2.jar)
+- idas:idas_underground_rare (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:villages (from idasconfig-1.7.1-1.19.2.zip)
+- idas:ancient_mines (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_ocean (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_rare (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_small (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_uncommon (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_underground (from idasconfig-1.7.1-1.19.2.zip)
+- idas:idas_underground_rare (from idasconfig-1.7.1-1.19.2.zip)
+
+#idas:small_nether_avoid
+- minecraft:nether_complexes (from idas_forge-1.7.1+1.19.2.jar)
+- minecraft:nether_complexes (from idasconfig-1.7.1-1.19.2.zip)

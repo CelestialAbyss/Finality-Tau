@@ -1,0 +1,17 @@
+{
+    "name": "Sushi Go Crafting",
+    "icon": "sushigocrafting:nori_sheets",
+    "category": "patchouli:sustenance",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "To get into making sushi, you will need a few things: $(li)Sushi Go Crafting's Cutting Board $(li)Cleaver Knife $(li)Roller $(li)Rice Cooker $(li)Cooler Box $(br2)While this entry is in progress, please use Sushi Go Crafting's patchouli guidebook. Recipe is on the next page."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "sushigocrafting:book",
+            "title": "Sushi Book!",
+            "text": "You will need to find some Seaweed in the ocean biome in order to craft this book."
+        }
+    ]
+}

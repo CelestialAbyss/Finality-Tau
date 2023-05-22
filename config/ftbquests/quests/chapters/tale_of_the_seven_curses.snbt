@@ -1,0 +1,824 @@
+{
+	id: "017D0DB69CFA7AD9"
+	group: "6855847200ADBE3A"
+	order_index: 7
+	filename: "tale_of_the_seven_curses"
+	title: "Enigmatic Legacy"
+	icon: "enigmaticlegacy:cursed_ring"
+	subtitle: ["Choose carefully, or suffer."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
+	quests: [
+		{
+			title: "Tale of the Seven Curses"
+			icon: "enigmaticlegacy:cursed_ring"
+			x: 5.5d
+			y: 0.0d
+			shape: "octagon"
+			subtitle: "To put on the ring, or to not put on the ring?"
+			description: ["Upon wearing the ring, this branch will unlock."]
+			dependencies: ["12AC3D51B071A726"]
+			size: 1.5d
+			id: "208774AE7914F294"
+			tasks: [{
+				id: "5D4A93C82E89171A"
+				type: "advancement"
+				advancement: "enigmaticlegacy:main/cursed_ring"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Memories forever lost, to time."
+			icon: "enigmaticlegacy:unwitnessed_amulet"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Welcome to Enigmatic Legacy."
+			description: ["You can either choose to walk the path of the cursed or refuse to wear the ring. Your choice."]
+			dependencies: ["6EEDB74144BCAD6C"]
+			size: 1.5d
+			id: "12AC3D51B071A726"
+			tasks: [{
+				id: "00496091148AA48D"
+				type: "checkmark"
+				title: "Where am I?"
+			}]
+		}
+		{
+			title: "Reaching Enlightenment"
+			x: 0.0d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "Acquire the KNOWLEDGE!"
+			dependencies: ["12AC3D51B071A726"]
+			id: "040E48C782B00AF9"
+			tasks: [{
+				id: "1972F5C490B5225E"
+				type: "item"
+				item: "enigmaticlegacy:the_acknowledgment"
+				only_from_crafting: true
+			}]
+		}
+		{
+			title: "Don't die."
+			icon: "artifacts:obsidian_skull"
+			x: 5.5d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "If you do die, you lose a part of your soul... literally."
+			description: ["Looks like you lost a part of your soul. Better find your soul fragments quick!"]
+			dependencies: ["208774AE7914F294"]
+			id: "11983113011D3B1F"
+			tasks: [
+				{
+					id: "6E536FDA2F80AD1D"
+					type: "stat"
+					title: "Die once while wearing the Ring of the Seven Curses."
+					icon: "artifacts:obsidian_skull"
+					stat: "minecraft:deaths"
+					value: 1
+				}
+				{
+					id: "478EBF68BF607504"
+					type: "checkmark"
+					title: "Die once or more."
+				}
+			]
+		}
+		{
+			title: "Acquire the Magnetic Ring"
+			x: -5.0d
+			y: 1.5d
+			subtitle: "Become a walking magnet!"
+			dependencies: ["681F73AE3065F443"]
+			id: "1FB1A53755B36654"
+			tasks: [{
+				id: "3597EA39F5A41E11"
+				type: "item"
+				item: "enigmaticlegacy:magnet_ring"
+			}]
+		}
+		{
+			title: "Acquire the Dislocation Ring"
+			x: -5.0d
+			y: 3.0d
+			subtitle: "Become a walking neodymium magnet."
+			dependencies: ["1FB1A53755B36654"]
+			id: "2C28B9F44D650E24"
+			tasks: [{
+				id: "050263E9706A8BDE"
+				type: "item"
+				item: "enigmaticlegacy:super_magnet_ring"
+			}]
+		}
+		{
+			title: "The Dust of Space and Time"
+			x: 0.0d
+			y: 14.5d
+			shape: "rsquare"
+			subtitle: "Only found in End Cities."
+			description: ["Those who bear the Seven Curses may obtain this by destroying Shulkers."]
+			dependencies: ["34BBD9B70AE0AAB1"]
+			hide: true
+			id: "1EB71203E5FF754F"
+			tasks: [{
+				id: "225A19245977AB21"
+				type: "item"
+				item: "enigmaticlegacy:astral_dust"
+			}]
+		}
+		{
+			title: "Acquire the Heart of the Golem"
+			x: -1.5d
+			y: -1.5d
+			subtitle: "Tough cookies."
+			dependencies: ["12AC3D51B071A726"]
+			id: "66F80C2ABCE3E66D"
+			tasks: [{
+				id: "3984CFE1DD05CD48"
+				type: "item"
+				item: "enigmaticlegacy:golem_heart"
+			}]
+		}
+		{
+			title: "Acquire the Heart of the Abyss"
+			x: 8.0d
+			y: 13.0d
+			shape: "rsquare"
+			subtitle: "Hopefully you enjoyed that fight."
+			dependencies: ["34BBD9B70AE0AAB1"]
+			hide: true
+			id: "156CAC730EA3088E"
+			tasks: [{
+				id: "65D3FAB3A7024852"
+				type: "item"
+				item: "enigmaticlegacy:abyssal_heart"
+			}]
+		}
+		{
+			title: "The Ominous Book"
+			x: 5.5d
+			y: 13.0d
+			shape: "rsquare"
+			subtitle: "You feel the abyss stare back at you."
+			dependencies: [
+				"156CAC730EA3088E"
+				"0A73FCA06952871D"
+				"2FA433E979086310"
+			]
+			id: "12531774E80AC679"
+			tasks: [{
+				id: "178DC19C3AA0F159"
+				type: "item"
+				item: "enigmaticlegacy:the_infinitum"
+			}]
+		}
+		{
+			title: "Acquire the Burden of Desolation"
+			x: 8.0d
+			y: 15.5d
+			shape: "rsquare"
+			subtitle: "The best thing to do is end it all and leave forever..."
+			dependencies: [
+				"53C02593AC1F91ED"
+				"156CAC730EA3088E"
+			]
+			id: "138747E2315C1FEC"
+			tasks: [{
+				id: "7336D0DED762FD69"
+				type: "item"
+				item: "enigmaticlegacy:desolation_ring"
+			}]
+		}
+		{
+			title: "Find the Pearl of the Void"
+			x: 10.0d
+			y: 15.5d
+			shape: "rsquare"
+			subtitle: "A rare treasure... at the end of time."
+			dependencies: ["34BBD9B70AE0AAB1"]
+			hide: true
+			id: "53C02593AC1F91ED"
+			tasks: [{
+				id: "0DAFCFB41F14173C"
+				type: "item"
+				item: "enigmaticlegacy:void_pearl"
+			}]
+		}
+		{
+			title: "Acquire the Celestial Fruit"
+			x: -1.5d
+			y: 16.0d
+			shape: "rsquare"
+			subtitle: "A gift that is only found in the End."
+			dependencies: ["34BBD9B70AE0AAB1"]
+			hide: true
+			id: "76522994457CD38A"
+			tasks: [{
+				id: "5DC5FDB4FBD8E027"
+				type: "item"
+				item: "enigmaticlegacy:astral_fruit"
+			}]
+		}
+		{
+			title: "A Blazing Shield!"
+			x: 6.5d
+			y: 10.5d
+			shape: "rsquare"
+			subtitle: "A shield that can finally extinguish your eternal fire..."
+			description: ["You do realize it's a shield made out of fire, right?"]
+			dependencies: ["3E5C9C8D7ED4EF05"]
+			id: "45313F16CBCB2923"
+			tasks: [{
+				id: "73F903E480B1E452"
+				type: "item"
+				item: {
+					id: "enigmaticlegacy:infernal_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Corrupting the Heart"
+			x: 5.5d
+			y: 9.5d
+			shape: "rsquare"
+			subtitle: "It's corrupted."
+			dependencies: [
+				"4F5A0B97911720DE"
+				"208774AE7914F294"
+			]
+			id: "3E5C9C8D7ED4EF05"
+			tasks: [{
+				id: "6736915742E63C22"
+				type: "item"
+				item: "enigmaticlegacy:twisted_heart"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 10.5d
+			shape: "rsquare"
+			dependencies: ["3E5C9C8D7ED4EF05"]
+			id: "7BECABEF86342F46"
+			tasks: [{
+				id: "12208979EE0F7104"
+				type: "item"
+				item: "enigmaticlegacy:twisted_mirror"
+			}]
+		}
+		{
+			title: "What's The Twist?"
+			x: 5.5d
+			y: 11.0d
+			shape: "rsquare"
+			subtitle: "Absolutely no strings attached."
+			dependencies: ["3E5C9C8D7ED4EF05"]
+			id: "0A73FCA06952871D"
+			tasks: [{
+				id: "72BFA85F188A94B0"
+				type: "item"
+				item: "enigmaticlegacy:the_twist"
+			}]
+		}
+		{
+			title: "A Blessing or a Curse?"
+			x: 7.0d
+			y: -1.5d
+			shape: "rsquare"
+			subtitle: "This is the only way to destroy the ring, but you do not escape unscathed."
+			dependencies: [
+				"208774AE7914F294"
+				"6736915742E63C22"
+			]
+			hide: true
+			id: "053D69FDDE2A8783"
+			tasks: [{
+				id: "27BE3BCA34993C5E"
+				type: "item"
+				item: "enigmaticlegacy:cursed_stone"
+			}]
+		}
+		{
+			title: "Acquire the Dormant Eye"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Your very own narrator."
+			description: ["To awaken the Dormant Eye, please right click."]
+			dependencies: ["12AC3D51B071A726"]
+			id: "48C151A41CA3D343"
+			tasks: [{
+				id: "0BCB61FB9EE10E78"
+				type: "item"
+				item: {
+					id: "enigmaticlegacy:enigmatic_eye"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Find the Heart of the Earth"
+			x: 3.0d
+			y: 7.0d
+			shape: "rsquare"
+			subtitle: "It's a foundational ingredient that can be found in dungeons."
+			dependencies: ["00496091148AA48D"]
+			hide: true
+			id: "4F5A0B97911720DE"
+			tasks: [{
+				id: "3D7A0F842FF6F9C4"
+				type: "item"
+				item: {
+					id: "enigmaticlegacy:earth_heart"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Create the Enchanter's Pearl"
+			x: 3.5d
+			y: 13.0d
+			shape: "rsquare"
+			subtitle: "Both a curse and a blessing."
+			dependencies: ["34BBD9B70AE0AAB1"]
+			hide: true
+			id: "2FA433E979086310"
+			tasks: [{
+				id: "40AD18AD24BEA5BC"
+				type: "item"
+				item: "enigmaticlegacy:enchanter_pearl"
+			}]
+		}
+		{
+			title: "Acquire an Iron Ring..."
+			x: -5.0d
+			y: 0.0d
+			subtitle: "It's just a basic ring."
+			dependencies: ["12AC3D51B071A726"]
+			id: "681F73AE3065F443"
+			tasks: [{
+				id: "741816FA96B4FD97"
+				type: "item"
+				item: "enigmaticlegacy:iron_ring"
+			}]
+		}
+		{
+			title: "Acquire the Exquisite Ring"
+			x: -5.0d
+			y: -1.5d
+			subtitle: "Oh the luxury! Even more exquisite!"
+			description: ["This ring makes Piglins neutral towards you."]
+			dependencies: ["681F73AE3065F443"]
+			id: "4694F6D543E967E8"
+			tasks: [{
+				id: "19FCFBBF95C65F68"
+				type: "item"
+				item: "enigmaticlegacy:golden_ring"
+			}]
+		}
+		{
+			title: "The Pact of Infinite Avarice"
+			x: 8.0d
+			y: 10.5d
+			shape: "rsquare"
+			subtitle: "Greed."
+			dependencies: [
+				"19FCFBBF95C65F68"
+				"1FB5367AB0593332"
+			]
+			hide: true
+			id: "11E1C39B69C180E4"
+			tasks: [{
+				id: "46196A856106A204"
+				type: "item"
+				item: "enigmaticlegacy:avarice_scroll"
+			}]
+		}
+		{
+			title: "Create the Essence of Raging Life"
+			x: 2.0d
+			y: 8.0d
+			shape: "rsquare"
+			subtitle: "Infinitum incrementum."
+			dependencies: ["4F5A0B97911720DE"]
+			id: "5963885E766A0D02"
+			tasks: [{
+				id: "4C5491916CD948B3"
+				type: "item"
+				item: "enigmaticlegacy:infinimeal"
+			}]
+		}
+		{
+			title: "Create the Charm of the Treasure Hunter"
+			x: 1.5d
+			y: 7.0d
+			shape: "rsquare"
+			subtitle: "Infinite night vision while underground."
+			description: ["Very convenient, right?"]
+			dependencies: ["4F5A0B97911720DE"]
+			id: "6A6A9E7BF92A2188"
+			tasks: [{
+				id: "612CC7C847C19AAD"
+				type: "item"
+				item: {
+					id: "enigmaticlegacy:mining_charm"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Make the Teleportato"
+			x: -1.5d
+			y: 14.5d
+			shape: "rsquare"
+			subtitle: "...why?"
+			dependencies: ["1EB71203E5FF754F"]
+			id: "7B6D7FEF7E3BC444"
+			tasks: [{
+				id: "33A3DA5B34F5F983"
+				type: "item"
+				item: "enigmaticlegacy:astral_potato"
+			}]
+		}
+		{
+			title: "Acquire the Heart of the Cosmos"
+			x: 0.0d
+			y: 16.0d
+			subtitle: "A multi-purpose ingredient."
+			dependencies: ["1EB71203E5FF754F"]
+			id: "005E3F75DBA9A31D"
+			tasks: [{
+				id: "093A30C931BF91C6"
+				type: "item"
+				item: {
+					id: "enigmaticlegacy:cosmic_heart"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "THE Eternal Cake"
+			x: 0.0d
+			y: 17.5d
+			shape: "rsquare"
+			subtitle: "Cake of Eternal Lies"
+			description: ["It uhhh... regenerates itself over time."]
+			dependencies: ["005E3F75DBA9A31D"]
+			id: "444036B6E4FD2A60"
+			tasks: [{
+				id: "4B83D04B3B194218"
+				type: "item"
+				item: "enigmaticlegacy:cosmic_cake"
+			}]
+		}
+		{
+			title: "Acquire The Ring of Ender"
+			x: -6.5d
+			y: 0.0d
+			subtitle: "It's your Ender Chest, but it is on you at all times."
+			dependencies: ["681F73AE3065F443"]
+			id: "6CD02EF71074F088"
+			tasks: [{
+				id: "7478A15B8A4CFAB5"
+				type: "item"
+				item: "enigmaticlegacy:ender_ring"
+			}]
+		}
+		{
+			title: "One Thousand Curses"
+			x: 8.0d
+			y: 8.5d
+			shape: "rsquare"
+			subtitle: "One thousand voices emanate from the scroll."
+			dependencies: ["1FB5367AB0593332"]
+			id: "76AE933054BE4A21"
+			tasks: [{
+				id: "66C73C7FE5658DEA"
+				type: "item"
+				item: "enigmaticlegacy:cursed_scroll"
+			}]
+		}
+		{
+			title: "The Best Sponge"
+			x: 1.5d
+			y: -1.5d
+			subtitle: "Spongebob Squarepants!"
+			dependencies: ["12AC3D51B071A726"]
+			id: "3A5294E2809B32A0"
+			tasks: [{
+				id: "38E15849BA852876"
+				type: "item"
+				item: "enigmaticlegacy:mega_sponge"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			shape: "rsquare"
+			dependencies: ["208774AE7914F294"]
+			id: "1451BC425274C7C6"
+			tasks: [{
+				id: "77BCAC731D6A50DC"
+				type: "item"
+				item: "enigmaticlegacy:guardian_heart"
+			}]
+		}
+		{
+			title: "Becoming the Writer"
+			icon: "enigmaticlegacy:lore_inscriber"
+			x: 1.5d
+			y: 14.5d
+			shape: "rsquare"
+			subtitle: "You can now add lore to your stuff."
+			dependencies: ["1EB71203E5FF754F"]
+			id: "2C42886701AC5746"
+			tasks: [
+				{
+					id: "1DEFF2DB6BB37B0F"
+					type: "item"
+					item: "enigmaticlegacy:lore_inscriber"
+				}
+				{
+					id: "1265C79FAB183E5F"
+					type: "item"
+					item: {
+						id: "enigmaticlegacy:lore_fragment"
+						Count: 1b
+						tag: {
+							display: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["12AC3D51B071A726"]
+			id: "6CD35482F5E5C780"
+			tasks: [
+				{
+					id: "59DDF1EA7E831394"
+					type: "item"
+					item: "enigmaticlegacy:animal_guidebook"
+				}
+				{
+					id: "0F36DD527CD33BBB"
+					type: "item"
+					item: "enigmaticlegacy:hunter_guidebook"
+				}
+			]
+		}
+		{
+			title: "The Hungry Book"
+			x: 1.5d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "It's very hungry, for enchantments."
+			dependencies: ["12AC3D51B071A726"]
+			id: "11997F2E625018CE"
+			tasks: [{
+				id: "09051F6D1F4D7E0E"
+				type: "item"
+				item: "enigmaticlegacy:enchantment_transposer"
+				only_from_crafting: true
+			}]
+		}
+		{
+			title: "Scroll of Creation"
+			x: 0.0d
+			y: 13.0d
+			shape: "rsquare"
+			dependencies: [
+				"14EEC0FCC423EBA4"
+				"1EB71203E5FF754F"
+			]
+			id: "70EA9D16224B7126"
+			tasks: [{
+				id: "2621B4E6EA5C2056"
+				type: "item"
+				item: "enigmaticlegacy:fabulous_scroll"
+			}]
+		}
+		{
+			title: "Scrolls of Darkness"
+			x: 8.0d
+			y: 9.5d
+			shape: "rsquare"
+			subtitle: "These scrolls are so dark that you can't see the surface of it as you hold it in your hands."
+			dependencies: ["3E5C9C8D7ED4EF05"]
+			id: "1FB5367AB0593332"
+			tasks: [{
+				id: "2322354B6E17253D"
+				type: "item"
+				item: "enigmaticlegacy:darkest_scroll"
+			}]
+		}
+		{
+			title: "The Angelic Spellstone"
+			x: -3.0d
+			y: 13.0d
+			dependencies: ["00496091148AA48D"]
+			hide: true
+			id: "6C92B5CFA5613508"
+			tasks: [{
+				id: "302198AB5E5A2831"
+				type: "item"
+				item: "enigmaticlegacy:angel_blessing"
+			}]
+		}
+		{
+			title: "Scroll from the Heavens"
+			x: -1.5d
+			y: 13.0d
+			shape: "rsquare"
+			dependencies: ["6C92B5CFA5613508"]
+			id: "14EEC0FCC423EBA4"
+			tasks: [{
+				id: "7D8697440EA80345"
+				type: "item"
+				item: "enigmaticlegacy:heaven_scroll"
+			}]
+		}
+		{
+			title: "The Heart of Creation"
+			x: 1.5d
+			y: 16.0d
+			shape: "rsquare"
+			subtitle: "Immortality."
+			dependencies: ["005E3F75DBA9A31D"]
+			id: "78AF5418F2B63A76"
+			tasks: [{
+				id: "19DBEFCB0514155E"
+				type: "item"
+				item: "enigmaticlegacy:enigmatic_item"
+			}]
+		}
+		{
+			title: "Brew the Potion of Recall"
+			x: 0.0d
+			y: 3.5d
+			shape: "rsquare"
+			dependencies: ["040E48C782B00AF9"]
+			id: "56BBB54B2451C552"
+			tasks: [{
+				id: "7DD5A0B3193D9F41"
+				type: "item"
+				item: "enigmaticlegacy:recall_potion"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			shape: "rsquare"
+			dependencies: ["56BBB54B2451C552"]
+			id: "58FEEE64A3D256CC"
+			tasks: [{
+				id: "5DB27D523C7CF104"
+				type: "item"
+				item: "enigmaticlegacy:mending_mixture"
+			}]
+		}
+		{
+			title: "The Tome of Devoured Malignancy"
+			x: 7.5d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "It devours curses, what did you expect?"
+			dependencies: [
+				"5D4A93C82E89171A"
+				"208774AE7914F294"
+				"09051F6D1F4D7E0E"
+			]
+			hide: true
+			id: "5B71190FB35FC105"
+			tasks: [{
+				id: "181CF31B2E98EC36"
+				type: "item"
+				item: "enigmaticlegacy:curse_transposer"
+				only_from_crafting: true
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.5d
+			dependencies: ["4A691BB889286C89"]
+			hide: true
+			id: "2FE947D84AEDF084"
+			tasks: [{
+				id: "37EEA877D5A717D6"
+				type: "item"
+				item: "enigmaticlegacy:ocean_stone"
+			}]
+		}
+		{
+			title: "Acquire the Eye of the Nebula"
+			x: -3.0d
+			y: 10.0d
+			dependencies: ["41ADDCD19E1253FF"]
+			hide: true
+			id: "43142F2D72DAE34B"
+			tasks: [{
+				id: "54C918C725398C7F"
+				type: "item"
+				item: "enigmaticlegacy:eye_of_nebula"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 11.5d
+			dependencies: [
+				"6C92B5CFA5613508"
+				"43142F2D72DAE34B"
+			]
+			id: "5E359D8B3DE40A0A"
+			tasks: [{
+				id: "458AB0BBCDBD3B84"
+				type: "item"
+				item: {
+					id: "enigmaticlegacy:enigmatic_elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: 10.0d
+			shape: "rsquare"
+			dependencies: ["43142F2D72DAE34B"]
+			id: "7357B9DC587DED29"
+			tasks: [{
+				id: "485283F06EC67749"
+				type: "item"
+				item: "enigmaticlegacy:end_anchor"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 10.0d
+			shape: "rsquare"
+			dependencies: ["43142F2D72DAE34B"]
+			id: "05C6A402F6B443FB"
+			tasks: [{
+				id: "5AFAF59581229658"
+				type: "item"
+				item: "enigmaticlegacy:escape_scroll"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			shape: "rsquare"
+			dependencies: ["4A691BB889286C89"]
+			hide: true
+			id: "4E7A2F79DCA59E12"
+			tasks: [{
+				id: "67A791047E7BC34B"
+				type: "item"
+				item: {
+					id: "enigmaticlegacy:xp_scroll"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Acquire the Emblem of Monster Slayer"
+			x: -3.0d
+			y: 7.0d
+			dependencies: ["4A691BB889286C89"]
+			hide: true
+			id: "6872B158D9984864"
+			tasks: [{
+				id: "7E6DB9CD6A52E8D8"
+				type: "item"
+				item: "enigmaticlegacy:monster_charm"
+			}]
+		}
+		{
+			title: "Acquire the Emblem of Bloodstained Valor"
+			x: 4.0d
+			y: 9.5d
+			dependencies: ["3E5C9C8D7ED4EF05"]
+			id: "2AD507323E1DCC9C"
+			tasks: [{
+				id: "0C4D79B17024D268"
+				type: "item"
+				item: "enigmaticlegacy:berserk_charm"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
