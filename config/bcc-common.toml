@@ -5,9 +5,9 @@
 	#Range: > 0
 	modpackProjectID = 861775
 	#The name of the modpack
-	modpackName = "Finality"
+	modpackName = "Finality Tau"
 	#The version of the modpack
-	modpackVersion = "0.3.8b"
+	modpackVersion = "0.3.9.1b"
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false

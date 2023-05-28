@@ -35,9 +35,11 @@
 			}]
 		}
 		{
+			title: "The \"You're Dead.\" Staff."
 			x: 0.0d
 			y: 2.0d
 			shape: "rsquare"
+			subtitle: "Yeah... you're dead."
 			dependencies: ["4CED8BB70D69C044"]
 			id: "6BFA34D0B5E721F4"
 			tasks: [{

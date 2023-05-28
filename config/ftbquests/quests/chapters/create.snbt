@@ -1579,6 +1579,97 @@
 				item: "create:haunted_bell"
 			}]
 		}
+		{
+			x: 0.5d
+			y: -10.0d
+			shape: "hexagon"
+			subtitle: "Biig waterwheels."
+			dependencies: ["7D464E248ADF8C04"]
+			id: "6B91B516A2B08FAB"
+			tasks: [{
+				id: "2C35040170C85A27"
+				type: "checkmark"
+				title: "Just a Create 0.5.1a placeholder, move along."
+			}]
+		}
+		{
+			title: "Gone Diving!"
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["0CD722C2B48DF862"]
+			id: "3EC420EBA3F072EA"
+			tasks: [
+				{
+					id: "31740E2F3B89BBB6"
+					type: "item"
+					item: {
+						id: "create:diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6A4F894BE5A1ABB5"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+				{
+					id: "0288BA172F00FB1F"
+					type: "item"
+					item: {
+						id: "create:diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Lava Diving!"
+			x: -5.5d
+			y: 0.0d
+			subtitle: "Gone swimming in the lava oceans of the Nether."
+			dependencies: ["3EC420EBA3F072EA"]
+			id: "118165BB7641E814"
+			tasks: [
+				{
+					id: "0D76B7AE54E7C5E2"
+					type: "checkmark"
+					title: "Netherite Diving Helmet"
+				}
+				{
+					id: "0427B06CFEAC844A"
+					type: "checkmark"
+					title: "Netherite Backtank"
+				}
+				{
+					id: "28EB23DB6A5E3AFA"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6DB74C857C9DA640"
+					type: "checkmark"
+					title: "Netherite Diving Boots"
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }
