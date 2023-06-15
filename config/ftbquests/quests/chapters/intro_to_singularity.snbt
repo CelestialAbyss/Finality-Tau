@@ -1,39 +1,26 @@
 {
-	id: "063BF37EE3F476D4"
-	group: ""
-	order_index: 0
-	filename: "intro_to_singularity"
-	title: "Humble beginnings..."
-	icon: "minecraft:crying_obsidian"
-	subtitle: ["This is just the introduction..."]
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intro_to_singularity"
+	group: ""
+	icon: "minecraft:crying_obsidian"
+	id: "063BF37EE3F476D4"
 	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 3.0d
+		hover: [ ]
+		image: "minecraft:textures/gui/presets/packtitle.png"
+		rotation: 0.0d
+		width: 8.0d
 		x: 0.0d
 		y: -4.0d
-		width: 8.0d
-		height: 3.0d
-		rotation: 0.0d
-		image: "minecraft:textures/gui/presets/packtitle.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
 	}]
+	order_index: 0
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Hi! Welcome to Finality."
-			icon: {
-				id: "extendedcrafting:singularity"
-				Count: 1b
-				tag: {
-					Id: "extendedcrafting:coal"
-				}
-			}
-			x: 0.0d
-			y: 0.0d
-			shape: "rsquare"
-			subtitle: "Click me to check the description of this button."
 			description: [
 				"If you wish to play the modpack on its intended difficulty, set the difficulty to Hard. For obvious reasons, this is optional."
 				""
@@ -44,62 +31,63 @@
 				"Also, take the time now to SET YOUR KEYBINDS, only if you want to."
 				""
 			]
-			size: 1.5d
+			icon: {
+				Count: 1b
+				id: "extendedcrafting:singularity"
+				tag: {
+					Id: "extendedcrafting:coal"
+				}
+			}
 			id: "4A691BB889286C89"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F326401E791AF1B"
+				table_id: 6652661467762805826L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "Click me to check the description of this button."
 			tasks: [{
 				id: "10D0DC144CD6061E"
-				type: "checkmark"
 				title: "You have acknowledged the button."
+				type: "checkmark"
 			}]
-			rewards: [{
-				id: "1F326401E791AF1B"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 6652661467762805826L
-			}]
+			title: "Hi! Welcome to Finality."
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			title: "Introduction to Enigmatic Legacy"
+			dependencies: ["4A691BB889286C89"]
+			description: ["Once you wear the Ring of the Seven Curses, it is bound to you... eternally."]
+			hide: true
 			icon: {
-				id: "enigmaticlegacy:enigmatic_amulet"
 				Count: 1b
+				id: "enigmaticlegacy:enigmatic_amulet"
 				tag: {
 					AssignedColor: 0.1f
 				}
 			}
-			x: 1.5d
-			y: 0.0d
+			id: "6EEDB74144BCAD6C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63B4F8ECA1B5F39F"
+				table_id: 3533172865185366803L
+				type: "random"
+			}]
 			shape: "rsquare"
 			subtitle: "Power is a double edged sword, choose wisely."
-			description: ["Once you wear the Ring of the Seven Curses, it is bound to you... eternally."]
-			dependencies: ["4A691BB889286C89"]
-			hide: true
-			id: "6EEDB74144BCAD6C"
 			tasks: [{
 				id: "488C52212FD6799D"
-				type: "checkmark"
 				title: "I accept."
+				type: "checkmark"
 			}]
-			rewards: [{
-				id: "63B4F8ECA1B5F39F"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 3533172865185366803L
-			}]
+			title: "Introduction to Enigmatic Legacy"
+			x: 1.5d
+			y: 0.0d
 		}
 		{
-			title: "Are you sure this is vanilla?"
-			icon: {
-				id: "enigmaticlegacy:etherium_sword"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: -1.5d
-			y: 0.0d
-			shape: "rsquare"
-			subtitle: "The night is ever so slightly more dangerous, see for yourself."
+			dependencies: ["4A691BB889286C89"]
 			description: [
 				"Certain \"zombies\" are a bit different."
 				""
@@ -107,129 +95,139 @@
 				""
 				"If you are on the 1.18.2 version of this modpack, PLEASE DO NOT PUT THE LAST WITHER SKULL ON THE COMMAND BLOCK! You will regret it, unless if you like playing hardcore."
 			]
-			dependencies: ["4A691BB889286C89"]
 			hide: true
+			icon: {
+				Count: 1b
+				id: "enigmaticlegacy:etherium_sword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4913D65B3D761C6F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19ECA5AD05CE2E28"
+				table_id: 946488619696883447L
+				type: "random"
+			}]
+			shape: "rsquare"
+			subtitle: "The night is ever so slightly more dangerous, see for yourself."
 			tasks: [
 				{
+					entity: "minecraft:zombie"
+					icon: "minecraft:rotten_flesh"
 					id: "78DB3180CA1FD879"
 					type: "kill"
-					icon: "minecraft:rotten_flesh"
-					entity: "minecraft:zombie"
 					value: 64L
 				}
 				{
+					entity: "minecraft:skeleton"
+					icon: "minecraft:bone"
 					id: "2F4CA9AFAB3CC7A8"
 					type: "kill"
-					icon: "minecraft:bone"
-					entity: "minecraft:skeleton"
 					value: 32L
 				}
 				{
+					entity: "minecraft:creeper"
+					icon: "minecraft:gunpowder"
 					id: "10DA198E3B5A7642"
 					type: "kill"
-					icon: "minecraft:gunpowder"
-					entity: "minecraft:creeper"
 					value: 8L
 				}
 				{
+					entity: "minecraft:spider"
+					icon: "minecraft:string"
 					id: "3A5644DA06E25C5F"
 					type: "kill"
-					icon: "minecraft:string"
-					entity: "minecraft:spider"
 					value: 32L
 				}
 				{
+					entity: "minecraft:enderman"
+					icon: "minecraft:ender_pearl"
 					id: "65B6FE5E8BFB67C4"
 					type: "kill"
-					icon: "minecraft:ender_pearl"
-					entity: "minecraft:enderman"
 					value: 16L
 				}
 			]
-			rewards: [{
-				id: "19ECA5AD05CE2E28"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 946488619696883447L
-			}]
+			title: "Are you sure this is vanilla?"
+			x: -1.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["4A691BB889286C89"]
+			description: ["You're welcome~"]
+			hide: true
+			id: "5693356D2578CF5E"
+			rewards: [{
+				icon: "farmersdelight:sweet_berry_cheesecake"
+				id: "04DB34818E781059"
+				item: "farmersdelight:sweet_berry_cheesecake"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Hey, so Apotheosis puts your Sugar Cane, Bamboo and Cactus on steroids."
+			tasks: [
+				{
+					count: 64L
+					id: "1F80310E2B4B5CA8"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2B4116DC02EF2E64"
+					item: "minecraft:bamboo"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5DEF2DD3DDFA3A5F"
+					item: "minecraft:cactus"
+					type: "item"
+				}
+			]
 			title: "I don't remember Sugar Cane growing that tall..."
 			x: 0.0d
 			y: -1.5d
-			shape: "rsquare"
-			subtitle: "Hey, so Apotheosis puts your Sugar Cane, Bamboo and Cactus on steroids."
-			description: ["You're welcome~"]
-			dependencies: ["4A691BB889286C89"]
-			hide: true
-			id: "5693356D2578CF5E"
-			tasks: [
-				{
-					id: "1F80310E2B4B5CA8"
-					type: "item"
-					item: "minecraft:sugar_cane"
-					count: 64L
-				}
-				{
-					id: "2B4116DC02EF2E64"
-					type: "item"
-					item: "minecraft:bamboo"
-					count: 64L
-				}
-				{
-					id: "5DEF2DD3DDFA3A5F"
-					type: "item"
-					item: "minecraft:cactus"
-					count: 64L
-				}
-			]
-			rewards: [{
-				id: "04DB34818E781059"
-				type: "item"
-				item: "croptopia:cheese_cake"
-			}]
 		}
 		{
-			title: "Convenient Utilities"
-			icon: "extendedcrafting:handheld_table"
-			x: 0.0d
-			y: 1.5d
-			shape: "rsquare"
-			subtitle: "No really, they are very convenient."
+			dependencies: ["4A691BB889286C89"]
 			description: [
 				"Press O to open the config interface for Inventory HUD+"
 				""
 				"Press I to show a preview of your inventory."
+				""
+				"You can also now repair your tools in the crafting grid with their respective materials, so you won't have to throw away your items."
 			]
-			dependencies: ["4A691BB889286C89"]
 			hide: true
+			icon: "extendedcrafting:handheld_table"
 			id: "0AE06EB85B6E1CB6"
+			rewards: [{
+				id: "6AECAF1DB1A11A84"
+				item: "minecraft:raw_iron_block"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "No really, they are very convenient."
 			tasks: [
 				{
 					id: "6907F27EE9B9826D"
-					type: "item"
 					item: "extendedcrafting:handheld_table"
 					only_from_crafting: true
+					type: "item"
 				}
 				{
 					id: "23A2283ADCF520ED"
-					type: "item"
 					item: "minecraft:campfire"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "6AECAF1DB1A11A84"
-				type: "item"
-				item: "minecraft:raw_iron_block"
-			}]
+			title: "Convenient Utilities"
+			x: 0.0d
+			y: 1.5d
 		}
 		{
-			title: "Convenient Utilities Ch.2 - The Akashic Tome"
-			x: -1.0d
-			y: 2.5d
-			shape: "rsquare"
-			subtitle: "Scientia Consolidationis"
+			dependencies: ["0AE06EB85B6E1CB6"]
 			description: [
 				"To add a book to it, simply combine them in the crafting table. You can have as many as you want, including duplicates."
 				""
@@ -245,21 +243,21 @@
 				""
 				"Use an Anvil and put some spaces after clearing the name to clear the custom name."
 			]
-			dependencies: ["0AE06EB85B6E1CB6"]
 			id: "2EF808209CCECE6A"
+			shape: "rsquare"
+			subtitle: "Scientia Consolidationis"
 			tasks: [{
 				id: "781047FC0FE342C3"
-				type: "item"
 				item: "akashictome:tome"
 				only_from_crafting: true
+				type: "item"
 			}]
+			title: "Convenient Utilities Ch.2 - The Akashic Tome"
+			x: -1.0d
+			y: 2.5d
 		}
 		{
-			title: "Convenient Utilities Ch.2 - The Morph Tool"
-			x: 1.0d
-			y: 2.5d
-			shape: "rsquare"
-			subtitle: "Clave Absolutio"
+			dependencies: ["0AE06EB85B6E1CB6"]
 			description: [
 				"Whenever you look at a block from the same mod as that wrench-like item, the Morphing Tool will turn into it."
 				""
@@ -271,51 +269,56 @@
 				""
 				"Use an Anvil and put some spaces after clearing the name to clear the custom name."
 			]
-			dependencies: ["0AE06EB85B6E1CB6"]
 			id: "09134C5108A1B870"
+			shape: "rsquare"
+			subtitle: "Clave Absolutio"
 			tasks: [{
 				id: "7AF4F455B45035C8"
-				type: "item"
 				item: "morphtool:tool"
 				only_from_crafting: true
+				type: "item"
 			}]
+			title: "Convenient Utilities Ch.2 - The Morph Tool"
+			x: 1.0d
+			y: 2.5d
 		}
 		{
-			title: "Craft the Tempad"
-			icon: "tempad:tempad"
-			x: 0.0d
-			y: 3.5d
-			shape: "rsquare"
-			subtitle: "For all time. Always."
-			description: ["Think of this device as a personal waystone with a long cooldown. It is very effective and customizable!"]
 			dependencies: [
 				"09134C5108A1B870"
 				"2EF808209CCECE6A"
 			]
+			description: ["Think of this device as a personal waystone with a long cooldown. It is very effective and customizable!"]
+			icon: "tempad:tempad"
 			id: "5E5E9241EB84A4E9"
+			shape: "rsquare"
+			subtitle: "For all time. Always."
 			tasks: [{
 				id: "265931DE467928C8"
-				type: "item"
 				item: "tempad:tempad"
 				only_from_crafting: true
+				type: "item"
 			}]
+			title: "Craft the Tempad"
+			x: 0.0d
+			y: 3.5d
 		}
 		{
-			title: "He who remains..."
+			dependencies: ["5E5E9241EB84A4E9"]
+			description: ["Unlimited teleports, for all time."]
 			icon: "tempad:he_who_remains_tempad"
-			x: 0.0d
-			y: 5.0d
+			id: "38EC0E607FAE4543"
 			shape: "rsquare"
 			subtitle: "...at the End of time."
-			description: ["Unlimited teleports, for all time."]
-			dependencies: ["5E5E9241EB84A4E9"]
-			id: "38EC0E607FAE4543"
 			tasks: [{
 				id: "07E460614DD4774D"
-				type: "item"
 				item: "tempad:he_who_remains_tempad"
+				type: "item"
 			}]
+			title: "He who remains..."
+			x: 0.0d
+			y: 5.0d
 		}
 	]
-	quest_links: [ ]
+	subtitle: ["This is just the introduction..."]
+	title: "Humble beginnings..."
 }

@@ -1,610 +1,607 @@
 {
-	id: "7B713F3F7FBBD4CF"
-	group: "65124948534FAE42"
-	order_index: 1
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
 	filename: "projecte"
-	title: "ProjectE"
+	group: "65124948534FAE42"
 	icon: {
-		id: "projecte:philosophers_stone"
 		Count: 1b
+		id: "projecte:philosophers_stone"
 		tag: { }
 	}
-	subtitle: ["Duplication, the mod."]
-	default_quest_shape: ""
-	default_hide_dependency_lines: false
+	id: "7B713F3F7FBBD4CF"
+	order_index: 1
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Introduction to ProjectE: The Philosopher's Stone"
-			x: 0.0d
-			y: 0.0d
-			shape: "rsquare"
-			subtitle: "Omnia aeterna."
-			description: ["Work in progress for mapping out."]
 			dependencies: ["4A691BB889286C89"]
+			description: ["Work in progress for mapping out."]
 			hide: true
-			size: 1.5d
 			id: "318C5EE2C3137838"
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "Omnia aeterna."
 			tasks: [{
 				id: "5835415D9F125D7D"
-				type: "item"
 				item: {
-					id: "projecte:philosophers_stone"
 					Count: 1b
-					tag: { }
 					ForgeCaps: {
 						Parent: { }
 					}
+					id: "projecte:philosophers_stone"
+					tag: { }
 				}
+				type: "item"
 			}]
+			title: "Introduction to ProjectE: The Philosopher's Stone"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			x: -3.0d
-			y: 9.0d
-			shape: "octagon"
-			subtitle: "*Infinite duplication."
 			dependencies: ["76870EC977869775"]
 			id: "745E4070C4982892"
+			shape: "octagon"
+			subtitle: "*Infinite duplication."
 			tasks: [{
 				id: "47F11BA5E55C64C9"
-				type: "item"
 				item: "projecte:transmutation_table"
+				type: "item"
 			}]
+			x: -3.0d
+			y: 9.0d
 		}
 		{
+			dependencies: ["1F2BE923BD6B12E9"]
+			id: "684621AE7ED36036"
+			subtitle: "Uber coal."
+			tasks: [{
+				id: "63C5FD16BC92A128"
+				item: "projecte:mobius_fuel"
+				type: "item"
+			}]
 			title: "Step 2: Mobius Fuel"
 			x: 0.0d
 			y: 4.0d
-			subtitle: "Uber coal."
-			dependencies: ["1F2BE923BD6B12E9"]
-			id: "684621AE7ED36036"
-			tasks: [{
-				id: "63C5FD16BC92A128"
-				type: "item"
-				item: "projecte:mobius_fuel"
-			}]
 		}
 		{
+			dependencies: ["684621AE7ED36036"]
+			id: "2548716CD0DC03FE"
+			subtitle: "Fuel eternal."
+			tasks: [{
+				id: "33D1344AD8FBF226"
+				item: "projecte:aeternalis_fuel"
+				type: "item"
+			}]
 			title: "Step 3: Aeternalis Fuel"
 			x: 0.0d
 			y: 6.0d
-			subtitle: "Fuel eternal."
-			dependencies: ["684621AE7ED36036"]
-			id: "2548716CD0DC03FE"
-			tasks: [{
-				id: "33D1344AD8FBF226"
-				type: "item"
-				item: "projecte:aeternalis_fuel"
-			}]
 		}
 		{
-			title: "Covalence Dust"
-			x: 0.0d
-			y: -2.0d
-			shape: "octagon"
-			subtitle: "It's just... magic dust."
 			dependencies: ["4A691BB889286C89"]
 			hide: true
 			id: "1FB7F93BFD08B4A3"
+			shape: "octagon"
+			subtitle: "It's just... magic dust."
 			tasks: [
 				{
 					id: "5D2845F2C194DF2F"
-					type: "item"
 					item: "projecte:low_covalence_dust"
+					type: "item"
 				}
 				{
 					id: "00B6F56B26B2BB97"
-					type: "item"
 					item: "projecte:medium_covalence_dust"
+					type: "item"
 				}
 				{
 					id: "2DF7CE22445DBCA5"
-					type: "item"
 					item: "projecte:high_covalence_dust"
+					type: "item"
 				}
 			]
+			title: "Covalence Dust"
+			x: 0.0d
+			y: -2.0d
 		}
 		{
-			x: 0.0d
-			y: 9.0d
-			shape: "octagon"
 			dependencies: ["2548716CD0DC03FE"]
 			id: "5B6ED4B1D9930EF5"
+			shape: "octagon"
 			tasks: [{
 				id: "6A758F9F6ABB4AC4"
-				type: "item"
 				item: "projecte:dark_matter"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 9.0d
 		}
 		{
-			x: 0.0d
-			y: 13.0d
-			shape: "octagon"
 			dependencies: ["5B6ED4B1D9930EF5"]
 			id: "18C14C791289A211"
+			shape: "octagon"
 			tasks: [{
 				id: "04E4508C7C940EEA"
-				type: "item"
 				item: "projecte:red_matter"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 13.0d
 		}
 		{
-			x: -1.5d
-			y: 9.0d
 			dependencies: ["5B6ED4B1D9930EF5"]
 			id: "76870EC977869775"
 			tasks: [{
 				id: "647E67970DFF856D"
-				type: "item"
 				item: "projecte:dark_matter_block"
+				type: "item"
 			}]
+			x: -1.5d
+			y: 9.0d
 		}
 		{
-			x: -3.0d
-			y: 13.0d
-			shape: "rsquare"
-			subtitle: "Pocket sized *infinite duplication."
 			dependencies: ["7F5B802769498880"]
 			id: "265354E8A1E48B33"
+			shape: "rsquare"
+			subtitle: "Pocket sized *infinite duplication."
 			tasks: [{
 				id: "112F4ABC7185F87A"
-				type: "item"
 				item: "projecte:transmutation_tablet"
+				type: "item"
 			}]
+			x: -3.0d
+			y: 13.0d
 		}
 		{
-			title: "The Dark Matter Arsenal"
-			x: -1.0d
-			y: 10.0d
 			dependencies: ["5B6ED4B1D9930EF5"]
 			id: "1778C86CD7B6CD7E"
 			tasks: [
 				{
 					id: "3D48CA7510FD150E"
-					type: "item"
 					item: {
-						id: "projecte:dm_sword"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:dm_sword"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "3A48627194255752"
-					type: "item"
 					item: {
-						id: "projecte:dm_pick"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:dm_pick"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "4CFB63C251D8CB59"
-					type: "item"
 					item: {
-						id: "projecte:dm_axe"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:dm_axe"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "1AE10CA78BC4C7A9"
-					type: "item"
 					item: {
-						id: "projecte:dm_shovel"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:dm_shovel"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "21885716A2DD068F"
-					type: "item"
 					item: {
-						id: "projecte:dm_hoe"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:dm_hoe"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "29AFB2BC24CDB561"
-					type: "item"
 					item: {
-						id: "projecte:dm_shears"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:dm_shears"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "175C578FBF2811AC"
-					type: "item"
 					item: {
-						id: "projecte:dm_hammer"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:dm_hammer"
+						tag: { }
 					}
+					type: "item"
 				}
 			]
+			title: "The Dark Matter Arsenal"
+			x: -1.0d
+			y: 10.0d
 		}
 		{
-			x: -1.0d
-			y: 8.0d
 			dependencies: ["5B6ED4B1D9930EF5"]
 			id: "3D2FECE11CBC72C7"
 			tasks: [
 				{
 					id: "09DE6EEBA8D04CF9"
-					type: "item"
 					item: "projecte:dm_helmet"
+					type: "item"
 				}
 				{
 					id: "64B44192254A9D62"
-					type: "item"
 					item: "projecte:dm_chestplate"
+					type: "item"
 				}
 				{
 					id: "3DEAD1CE0F7FF313"
-					type: "item"
 					item: "projecte:dm_leggings"
+					type: "item"
 				}
 				{
 					id: "08CAC1647DA16C3B"
-					type: "item"
 					item: "projecte:dm_boots"
+					type: "item"
 				}
 			]
+			x: -1.0d
+			y: 8.0d
 		}
 		{
-			x: 1.5d
-			y: 13.0d
 			dependencies: ["18C14C791289A211"]
 			id: "0B91CB2B9CB1C7CB"
 			tasks: [
 				{
 					id: "02D6CFF58031F03B"
-					type: "item"
 					item: "projecte:rm_helmet"
+					type: "item"
 				}
 				{
 					id: "210A0F6D7949F56D"
-					type: "item"
 					item: "projecte:rm_chestplate"
+					type: "item"
 				}
 				{
 					id: "315DFDCB395E045F"
-					type: "item"
 					item: "projecte:rm_leggings"
+					type: "item"
 				}
 				{
 					id: "53208AD3DD292054"
-					type: "item"
 					item: "projecte:rm_boots"
+					type: "item"
 				}
 			]
+			x: 1.5d
+			y: 13.0d
 		}
 		{
-			title: "The Red Matter Arsenal"
-			x: 0.0d
-			y: 14.5d
-			subtitle: "It's not even their final form."
 			dependencies: ["18C14C791289A211"]
 			id: "3D940EB20B42D7C2"
+			subtitle: "It's not even their final form."
 			tasks: [
 				{
 					id: "6425C8871266A7E4"
-					type: "item"
 					item: {
-						id: "projecte:rm_sword"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:rm_sword"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "4C1D34A73586DFA7"
-					type: "item"
 					item: {
-						id: "projecte:rm_pick"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:rm_pick"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "3F772535F12AF687"
-					type: "item"
 					item: {
-						id: "projecte:rm_axe"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:rm_axe"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "5DD38EF736463116"
-					type: "item"
 					item: {
-						id: "projecte:rm_shovel"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:rm_shovel"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "2A9C4896E3734C93"
-					type: "item"
 					item: {
-						id: "projecte:rm_hoe"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:rm_hoe"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "1138DAFE1ACF9731"
-					type: "item"
 					item: {
-						id: "projecte:rm_shears"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:rm_shears"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "7B385F1D2C5A496A"
-					type: "item"
 					item: {
-						id: "projecte:rm_hammer"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:rm_hammer"
+						tag: { }
 					}
+					type: "item"
 				}
 			]
+			title: "The Red Matter Arsenal"
+			x: 0.0d
+			y: 14.5d
 		}
 		{
-			title: "Step 1: Klein Star Ein"
-			x: 3.0d
-			y: 4.0d
-			subtitle: "You will need A LOT more coal."
 			dependencies: ["684621AE7ED36036"]
 			id: "050AD8794F02270A"
+			subtitle: "You will need A LOT more coal."
 			tasks: [{
 				id: "52EF3D72EBD24283"
-				type: "item"
 				item: {
-					id: "projecte:klein_star_ein"
 					Count: 1b
 					ForgeCaps: {
 						Parent: { }
 					}
+					id: "projecte:klein_star_ein"
 				}
+				type: "item"
 			}]
+			title: "Step 1: Klein Star Ein"
+			x: 3.0d
+			y: 4.0d
 		}
 		{
-			title: "Step 2: Klein Star Zwei"
-			x: 3.0d
-			y: 6.0d
 			dependencies: ["050AD8794F02270A"]
 			id: "74BE407B7BEFC181"
 			tasks: [{
 				id: "60D09D8F38AE70F2"
-				type: "item"
 				item: {
-					id: "projecte:klein_star_zwei"
 					Count: 1b
 					ForgeCaps: {
 						Parent: { }
 					}
+					id: "projecte:klein_star_zwei"
 				}
+				type: "item"
 			}]
+			title: "Step 2: Klein Star Zwei"
+			x: 3.0d
+			y: 6.0d
 		}
 		{
-			title: "Step 3: Klein Star Drei"
-			x: 5.0d
-			y: 6.0d
 			dependencies: ["74BE407B7BEFC181"]
 			id: "56B94DFE72958228"
 			tasks: [{
 				id: "335F04E7C2EA5AC3"
-				type: "item"
 				item: {
-					id: "projecte:klein_star_drei"
 					Count: 1b
 					ForgeCaps: {
 						Parent: { }
 					}
+					id: "projecte:klein_star_drei"
 				}
+				type: "item"
 			}]
+			title: "Step 3: Klein Star Drei"
+			x: 5.0d
+			y: 6.0d
 		}
 		{
-			title: "Step 4: Klein Star Vier"
-			x: 5.0d
-			y: 9.0d
 			dependencies: ["56B94DFE72958228"]
 			id: "1A1263AEE93F370F"
 			tasks: [{
 				id: "3DB1DBDC1FB128BB"
-				type: "item"
 				item: {
-					id: "projecte:klein_star_vier"
 					Count: 1b
 					ForgeCaps: {
 						Parent: { }
 					}
+					id: "projecte:klein_star_vier"
 				}
+				type: "item"
 			}]
+			title: "Step 4: Klein Star Vier"
+			x: 5.0d
+			y: 9.0d
 		}
 		{
-			title: "Step 5: Klein Star Sphere"
-			x: 3.0d
-			y: 9.0d
 			dependencies: ["1A1263AEE93F370F"]
 			id: "6751C9F4AF12E481"
 			tasks: [{
 				id: "7393FF2D7FA92A39"
-				type: "item"
 				item: {
-					id: "projecte:klein_star_sphere"
 					Count: 1b
 					ForgeCaps: {
 						Parent: { }
 					}
+					id: "projecte:klein_star_sphere"
 				}
+				type: "item"
 			}]
+			title: "Step 5: Klein Star Sphere"
+			x: 3.0d
+			y: 9.0d
 		}
 		{
-			title: "Step 6: Klein Star Omega"
-			x: 3.0d
-			y: 11.5d
 			dependencies: ["6751C9F4AF12E481"]
 			id: "2DC4A4EB70D6BD4C"
 			tasks: [{
 				id: "5CAD1EBFC89FEC8E"
-				type: "item"
 				item: {
-					id: "projecte:klein_star_omega"
 					Count: 1b
 					ForgeCaps: {
 						Parent: { }
 					}
+					id: "projecte:klein_star_omega"
 				}
+				type: "item"
 			}]
+			title: "Step 6: Klein Star Omega"
+			x: 3.0d
+			y: 11.5d
 		}
 		{
-			x: 0.0d
-			y: -4.0d
-			shape: "rsquare"
-			subtitle: "Mendacium infinitum."
 			dependencies: ["1FB7F93BFD08B4A3"]
 			id: "708E3C90EB6F6CF5"
+			shape: "rsquare"
+			subtitle: "Mendacium infinitum."
 			tasks: [{
 				id: "3C01180B4CCA6953"
-				type: "item"
 				item: {
-					id: "projecte:repair_talisman"
 					Count: 1b
 					ForgeCaps: {
 						Parent: { }
 					}
+					id: "projecte:repair_talisman"
 				}
+				type: "item"
 			}]
+			x: 0.0d
+			y: -4.0d
 		}
 		{
-			title: "A Big Chest"
-			x: -2.5d
-			y: -2.0d
 			dependencies: ["1FB7F93BFD08B4A3"]
 			id: "7CABE61F6D5FD0CC"
 			tasks: [{
 				id: "1FEAF8C7552C81C8"
-				type: "item"
 				item: "projecte:alchemical_chest"
+				type: "item"
 			}]
+			title: "A Big Chest"
+			x: -2.5d
+			y: -2.0d
 		}
 		{
-			title: "The Beginner's Matter Condenser"
-			x: -3.5d
-			y: -0.5d
-			subtitle: "Unlimited matter."
 			dependencies: [
 				"7CABE61F6D5FD0CC"
 				"1ED4B32D3B882001"
 			]
 			id: "248AB8E1A8050FC7"
+			subtitle: "Unlimited matter."
 			tasks: [{
 				id: "2911E7755366E85F"
-				type: "item"
 				item: "projecte:condenser_mk1"
+				type: "item"
 			}]
+			title: "The Beginner's Matter Condenser"
+			x: -3.5d
+			y: -0.5d
 		}
 		{
+			dependencies: ["248AB8E1A8050FC7"]
+			id: "1A76510B0E36AB04"
+			subtitle: "Matter eternal."
+			tasks: [{
+				id: "4C7308926373928F"
+				item: "projecte:condenser_mk2"
+				type: "item"
+			}]
 			title: "A Professional's Condenser"
 			x: -3.5d
 			y: 1.5d
-			subtitle: "Matter eternal."
-			dependencies: ["248AB8E1A8050FC7"]
-			id: "1A76510B0E36AB04"
-			tasks: [{
-				id: "4C7308926373928F"
-				type: "item"
-				item: "projecte:condenser_mk2"
-			}]
 		}
 		{
+			dependencies: ["7CABE61F6D5FD0CC"]
+			id: "1ED4B32D3B882001"
+			subtitle: "Use this to surround the energy collector chest."
+			tasks: [{
+				id: "1E45616E0AD581B6"
+				item: "projecte:collector_mk1"
+				type: "item"
+			}]
 			title: "EMC Collector MK1"
 			x: -4.5d
 			y: -2.0d
-			subtitle: "Use this to surround the energy collector chest."
-			dependencies: ["7CABE61F6D5FD0CC"]
-			id: "1ED4B32D3B882001"
-			tasks: [{
-				id: "1E45616E0AD581B6"
-				type: "item"
-				item: "projecte:collector_mk1"
-			}]
 		}
 		{
+			dependencies: ["1ED4B32D3B882001"]
+			id: "14D2E447DE9DC5E3"
+			subtitle: "Accelerated energy collection."
+			tasks: [{
+				id: "79561924739D377B"
+				item: "projecte:collector_mk2"
+				type: "item"
+			}]
 			title: "EMC Collector MK2"
 			x: -6.5d
 			y: -2.0d
-			subtitle: "Accelerated energy collection."
-			dependencies: ["1ED4B32D3B882001"]
-			id: "14D2E447DE9DC5E3"
-			tasks: [{
-				id: "79561924739D377B"
-				type: "item"
-				item: "projecte:collector_mk2"
-			}]
 		}
 		{
+			dependencies: ["14D2E447DE9DC5E3"]
+			id: "01F7D24EC88E128E"
+			subtitle: "Sanic speed energy collection."
+			tasks: [{
+				id: "510263C8119E8E6D"
+				item: "projecte:collector_mk3"
+				type: "item"
+			}]
 			title: "EMC Collector MK3"
 			x: -5.5d
 			y: -0.5d
-			subtitle: "Sanic speed energy collection."
-			dependencies: ["14D2E447DE9DC5E3"]
-			id: "01F7D24EC88E128E"
-			tasks: [{
-				id: "510263C8119E8E6D"
-				type: "item"
-				item: "projecte:collector_mk3"
-			}]
 		}
 		{
-			x: 3.0d
-			y: 13.0d
 			dependencies: [
 				"0B91CB2B9CB1C7CB"
 				"2DC4A4EB70D6BD4C"
@@ -613,84 +610,87 @@
 			tasks: [
 				{
 					id: "6E003E8258CFE42A"
-					type: "item"
 					item: "projecte:gem_helmet"
+					type: "item"
 				}
 				{
 					id: "006297C83D2BA942"
-					type: "item"
 					item: "projecte:gem_chestplate"
+					type: "item"
 				}
 				{
 					id: "4B98470B9C2C5A15"
-					type: "item"
 					item: "projecte:gem_leggings"
+					type: "item"
 				}
 				{
 					id: "09F598270738DDB8"
-					type: "item"
 					item: "projecte:gem_boots"
+					type: "item"
 				}
 			]
+			x: 3.0d
+			y: 13.0d
 		}
 		{
-			x: -1.5d
-			y: 13.0d
 			dependencies: ["18C14C791289A211"]
 			id: "7F5B802769498880"
 			tasks: [{
 				id: "7C8ABB127486BF77"
-				type: "item"
 				item: "projecte:red_matter_block"
+				type: "item"
 			}]
+			x: -1.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["318C5EE2C3137838"]
+			id: "1F2BE923BD6B12E9"
+			subtitle: "You will need a lot of this, trust me."
+			tasks: [{
+				id: "6584494443999781"
+				item: "projecte:alchemical_coal"
+				type: "item"
+			}]
 			title: "Step 1: Alchemical Coal"
 			x: 0.0d
 			y: 2.0d
-			subtitle: "You will need a lot of this, trust me."
-			dependencies: ["318C5EE2C3137838"]
-			id: "1F2BE923BD6B12E9"
-			tasks: [{
-				id: "6584494443999781"
-				type: "item"
-				item: "projecte:alchemical_coal"
-			}]
 		}
 		{
-			title: "Red Matter Absolution"
-			x: 0.0d
-			y: 16.0d
-			subtitle: "Consolidation."
 			dependencies: ["3D940EB20B42D7C2"]
 			id: "28C0889AEEE88811"
+			subtitle: "Consolidation."
 			tasks: [
 				{
 					id: "6AEAB5CBAC91BFEF"
-					type: "item"
 					item: {
-						id: "projecte:rm_katar"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:rm_katar"
+						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "21C4B7F93436CBE3"
-					type: "item"
 					item: {
-						id: "projecte:rm_morning_star"
 						Count: 1b
-						tag: { }
 						ForgeCaps: {
 							Parent: { }
 						}
+						id: "projecte:rm_morning_star"
+						tag: { }
 					}
+					type: "item"
 				}
 			]
+			title: "Red Matter Absolution"
+			x: 0.0d
+			y: 16.0d
 		}
 	]
-	quest_links: [ ]
+	subtitle: ["Duplication, the mod."]
+	title: "ProjectE"
 }

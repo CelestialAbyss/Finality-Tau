@@ -1,9 +1,8 @@
 {
-	id: "0D229A6288FB86F7"
-	order_index: 5
-	title: "Artifacts Tier 1"
 	icon: "artifacts:mimic_spawn_egg"
+	id: "0D229A6288FB86F7"
 	loot_size: 1
+	order_index: 5
 	rewards: [
 		{ item: "artifacts:whoopee_cushion" }
 		{ item: "artifacts:kitty_slippers" }
@@ -13,4 +12,5 @@
 		{ item: "artifacts:universal_attractor" }
 		{ item: "artifacts:umbrella" }
 	]
+	title: "Artifacts Tier 1"
 }

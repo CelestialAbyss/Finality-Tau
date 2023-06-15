@@ -18,7 +18,7 @@
 	teleport_range = 400
 	#Determines the chance a player will be teleported
 	#Range: 1 ~ 100
-	teleport_chance = 50
+	teleport_chance = 1
 	#A list of Dimensions that angels cannot teleport players to
-	banned_dimensions = ["minecraft:the_end"]
+	banned_dimensions = ["minecraft:the_end", "ad_astra:earth_orbit", "ad_astra:moon", "ad_astra:moon_orbit", "ad_astra:glacio", "ad_astra:glacio_orbit", "ad_astra:mars", "ad_astra:mars_orbit", "ad_astra:mercury", "ad_astra:mercury_orbit", "ad_astra:venus", "ad_astra:venus_orbit"]
 

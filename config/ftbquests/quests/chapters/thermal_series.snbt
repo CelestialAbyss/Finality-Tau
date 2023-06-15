@@ -1,63 +1,63 @@
 {
-	id: "74FFC2C0153CD042"
-	group: "668E3EA3A7A91B79"
-	order_index: 4
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
 	filename: "thermal_series"
-	title: "Thermal Series"
+	group: "668E3EA3A7A91B79"
 	icon: {
-		id: "thermal:energy_cell"
 		Count: 1b
+		id: "thermal:energy_cell"
 		tag: {
 			BlockEntityTag: {
-				EnergyMax: 1000000
-				EnergySend: 1000
 				Energy: 0
+				EnergyMax: 1000000
 				EnergyRecv: 1000
+				EnergySend: 1000
 			}
 		}
 	}
-	subtitle: ["Modern technology."]
-	default_quest_shape: ""
-	default_hide_dependency_lines: false
+	id: "74FFC2C0153CD042"
+	order_index: 4
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Create the Thermalpedia"
-			x: 0.0d
-			y: 0.0d
-			subtitle: "Introduction to Thermal Series"
+			dependencies: ["4A691BB889286C89"]
 			description: [
 				"Thermal Series is more oriented towards modern technology than Create and has RF / FE capabilties."
 				""
 				"There are also additional food items, so enjoy them."
 			]
-			dependencies: ["4A691BB889286C89"]
 			hide: true
 			id: "298E31D4E4BAFBD2"
+			subtitle: "Introduction to Thermal Series"
 			tasks: [{
 				id: "3422C8B3E2855430"
-				type: "item"
 				item: {
-					id: "patchouli:guide_book"
 					Count: 1b
+					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "thermal:guidebook"
 					}
 				}
+				type: "item"
 			}]
+			title: "Create the Thermalpedia"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["298E31D4E4BAFBD2"]
+			id: "034E50C6F50FED72"
+			subtitle: "Easily accessible and provides a steady supply of RF."
+			tasks: [{
+				id: "63DEF0A42E2918AD"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
 			title: "Acquire the Stirling Dynamo"
 			x: 0.0d
 			y: 1.5d
-			subtitle: "Easily accessible and provides a steady supply of RF."
-			dependencies: ["298E31D4E4BAFBD2"]
-			id: "034E50C6F50FED72"
-			tasks: [{
-				id: "63DEF0A42E2918AD"
-				type: "item"
-				item: "thermal:dynamo_stirling"
-			}]
 		}
 	]
-	quest_links: [ ]
+	subtitle: ["Modern technology."]
+	title: "Thermal Series"
 }

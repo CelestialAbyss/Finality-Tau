@@ -1,40 +1,40 @@
 {
-	id: "795903068BE735E6"
-	group: "2B2D0B6DE31DE8D3"
-	order_index: 2
-	filename: "sushi_go_crafting"
-	title: "Sushi Go Crafting"
-	icon: "sushigocrafting:onigiri"
-	subtitle: ["Sushi."]
-	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "sushi_go_crafting"
+	group: "2B2D0B6DE31DE8D3"
+	icon: "sushigocrafting:onigiri"
+	id: "795903068BE735E6"
+	order_index: 2
+	quest_links: [ ]
 	quests: [{
-		title: "Getting Started: Sushi Crafting"
-		icon: "sushigocrafting:seaweed"
-		x: 0.0d
-		y: 0.0d
-		subtitle: "Have fun with all things sushi related."
 		dependencies: ["4A691BB889286C89"]
 		hide: true
+		icon: "sushigocrafting:seaweed"
 		id: "2E2DB6D5171C31BC"
+		subtitle: "Have fun with all things sushi related."
 		tasks: [
 			{
 				id: "5D7F10E386F796F1"
-				type: "item"
 				item: {
-					id: "patchouli:guide_book"
 					Count: 1b
+					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "sushigocrafting:sushigocrafting"
 					}
 				}
+				type: "item"
 			}
 			{
 				id: "1A97602FB6D57D4A"
-				type: "item"
 				item: "sushigocrafting:cleaver_knife"
+				type: "item"
 			}
 		]
+		title: "Getting Started: Sushi Crafting"
+		x: 0.0d
+		y: 0.0d
 	}]
-	quest_links: [ ]
+	subtitle: ["Sushi."]
+	title: "Sushi Go Crafting"
 }

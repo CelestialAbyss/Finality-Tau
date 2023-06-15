@@ -4,11 +4,11 @@ ServerEvents.recipes(event => {
     event.remove({id: 'create_sa:netherrack_recipe'})
     event.remove({id: 'create_sa:obsidian_haunting'})
     // compacting
-    event.recipes.createCompacting(['minecraft:diamond'], [Item.of('9x minecraft:coal_block'), Fluid.of('minecraft:lava', 250)]).superheated().id('finality:renew_diamond')
-    event.recipes.createCompacting(['minecraft:coal'], [Item.of('9x minecraft:dried_kelp_block')]).heated().id('finality:renew_coal')
+    event.recipes.createCompacting(['minecraft:diamond'], Array(9).fill('minecraft:coal_block').concat([Fluid.of('minecraft:lava', 250)])).superheated().id('finality:renew_diamond')
+    event.recipes.createCompacting(['minecraft:coal'], Array(9).fill('minecraft:dried_kelp_block')).heated().id('finality:renew_coal')
     event.recipes.createCompacting(['minecraft:basalt'], [Item.of('minecraft:blue_ice'), Fluid.of('minecraft:lava', 500)]).id('finality:compacting_basalt')
-    event.recipes.createCompacting(['minecraft:tuff'], [Item.of('9x minecraft:gravel'), Fluid.of('minecraft:lava', 250)]).superheated().id('finality:renew_tuff') // changed to require 9 gravel
-    event.recipes.createCompacting(['minecraft:tuff'], [Item.of('9x minecraft:deepslate'), Fluid.of('minecraft:lava', 250)]).heated().id('finality:renew_deepslate_tuff')
+    event.recipes.createCompacting(['minecraft:tuff'], Array(9).fill('minecraft:gravel').concat([Fluid.of('minecraft:lava', 250)])).superheated().id('finality:renew_tuff') // changed to require 9 gravel
+    event.recipes.createCompacting(['minecraft:tuff'], Array(9).fill('minecraft:deepslate').concat([Fluid.of('minecraft:lava', 250)])).heated().id('finality:renew_deepslate_tuff')
     // crushing
     event.remove({id: 'create:crushing/gravel'})
     event.remove({id: 'create:crushing/netherrack'})

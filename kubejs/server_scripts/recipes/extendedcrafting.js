@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         ' C',
         'S '
     ], {
-        C: '#forge:workbenches',
+        C: '#forge:workbench',
         S: '#forge:rods/wooden'
     }).id('finality:handheld_crafting_table_compat')
     event.shapeless('extendedcrafting:black_iron_ingot', ['minecraft:iron_ingot', 'minecraft:black_dye', 'create:powdered_obsidian']).id('finality:ext_black_iron_ingot')

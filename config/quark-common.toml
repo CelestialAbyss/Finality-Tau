@@ -38,7 +38,7 @@
 	"Enable Onboarding" = true
 	#Set to false to disable the behavior where quark will automatically hide any disabled items
 	"Hide Disabled Content" = true
-	#Set to false to disable Quark's item info when viweing recipe/uses for an item in JEI
+	#Set to false to disable Quark's item info when viewing recipe/uses for an item in JEI
 	"Enable Jei Item Info" = true
 	#For JEI info purposes, add any items here to specifically disable their JEI info from Quark. Note that Quark already only shows info that's relevant to which features are enabled
 	"Suppressed Info" = []
@@ -457,6 +457,10 @@
 		"Desert Temple Weight" = 8
 		"Item Quality" = 0
 		"Apply Cost" = 5
+		#Whether you can blend runes of each of the 'primary' colors plus white to create rainbow runes.
+		"Rainbow Rune Craftable" = true
+		#Whether you can blend runes of the 'primary' colors to create other colors of rune.
+		"Color Blending Runes" = true
 
 	[tools.bottled_cloud]
 		"Cloud Level Bottom" = 191
@@ -483,6 +487,8 @@
 		"Curse Gear" = false
 		#Allows combining tomes with normal books
 		"Combine With Books" = true
+		#Whether a sanity check is performed on the valid enchantments. If this is turned off, enchantments such as Silk Touch will be allowed to generate Ancient Tomes, if explicitly added to the Valid Enchantments.
+		"Sanity Check" = true
 
 	[tools.ambient_discs]
 		"Drop On Spider Kill" = true
@@ -535,6 +541,7 @@
 	"Automatic Recipe Unlock" = true
 	"Armed Armor Stands" = true
 	"Slimes To Magma Cubes" = true
+	"Sponges Better" = true
 	"Diamond Repair" = true
 
 	[tweaks.utility_recipes]
@@ -721,6 +728,14 @@
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
+
+	[tweaks.sponges_better]
+		#The maximum number of water tiles that a sponge can soak up. Vanilla default is 64.
+		#Allowed values: [64,)
+		"Maximum Water Drain" = 256
+		#The maximum number of water tiles that a sponge can 'crawl along' for draining. Vanilla default is 6.
+		#Allowed values: [6,)
+		"Maximum Crawl Distance" = 10
 
 	[tweaks.diamond_repair]
 		#List of changes to apply to repair items, format is "<item>=<repair_item>" as seen in the defualt.
@@ -1589,7 +1604,7 @@
 	"Spawner Replacer" = false
 	"Overlay Shader" = false
 	"Narrator Readout" = false
-	"Game Nerfs" = false
+	"Game Nerfs" = true
 	"Enchantments Begone" = false
 	"Adjustable Chat" = false
 	#This feature generates Resource Pack Item Model predicates on the items defined in 'Items to Change'
@@ -1614,13 +1629,13 @@
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod
 		#https://www.curseforge.com/minecraft/mc-mods/unmending
-		"Nerf Mending" = true
+		"Nerf Mending" = false
 		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
 		"Nerf Villager Discount" = true
 		#Makes Iron Golems not drop Iron Ingots
-		"Disable Iron Farms" = true
+		"Disable Iron Farms" = false
 		#Makes Boats not glide on ice
-		"Disable Ice Roads" = true
+		"Disable Ice Roads" = false
 		#Makes Sheep not drop Wool when killed
 		"Disable Wool Drops" = true
 		#Disables mob griefing for only specific entities
@@ -1628,6 +1643,10 @@
 		"Non Griefing Entities" = ["minecraft:creeper", "minecraft:enderman"]
 		#Force Elytra to only work in specific dimensions
 		"Enable Dimension Locked Elytra" = true
+		#Makes falling blocks not able to be duped via dimension crossing
+		"Disable Falling Block Dupe" = true
+		#Fixes several piston physics exploits, most notably including TNT duping
+		"Disable Piston Physics Exploits" = true
 		"Elytra Allowed Dimensions" = ["minecraft:the_end"]
 
 	[experimental.enchantments_begone]
@@ -1642,13 +1661,13 @@
 		"Enchantments To Register" = []
 
 [oddities]
-	"Totem Of Holding" = true
+	"Totem Of Holding" = false
 	"Tiny Potato" = true
-	Pipes = true
-	"Matrix Enchanting" = true
+	Pipes = false
+	"Matrix Enchanting" = false
 	Magnets = true
 	Crate = true
-	Backpack = true
+	Backpack = false
 
 	[oddities.totem_of_holding]
 		#Set this to false to remove the behaviour where totems destroy themselves if the player dies again.
@@ -1734,7 +1753,7 @@
 		"Influence Power" = 0.125
 		#If you set this to false, the vanilla Enchanting Table will no longer automatically convert to the Matrix Enchanting table. You'll have to add a recipe for the Matrix Enchanting Table to make use of this.
 		"Automatically Convert" = true
-		#Add specific enchantments to matrix enchanter. Meant for treasure ones
+		#Any treasure enchantment IDs here will be able to appear in books in matrix enchanting
 		"Treasure Whitelist" = []
 
 	[oddities.magnets]

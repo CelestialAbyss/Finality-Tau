@@ -1,0 +1,15 @@
+{
+    "name": "Repairing Tools",
+    "icon": "minecraft:diamond_pickaxe",
+    "category": "patchouli:genesis",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Thanks to Pickle Tweaks, you can now repair your tools in a crafting grid using the material that your tool is made out of. $(br2)So if you wanted to repair your broken diamond pickaxe, you can use three diamonds to fully repair it in a 3x3 crafting grid."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You can also partially repair your tools by combining one at a time, if needed. $(br2)Does it keep your enchantments? $(br2)Yes, it does."
+        }
+    ]
+}

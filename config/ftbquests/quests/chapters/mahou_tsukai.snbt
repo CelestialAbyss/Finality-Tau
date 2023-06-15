@@ -1,59 +1,59 @@
 {
-	id: "7F93293F2CD8EAEF"
-	group: ""
-	order_index: 2
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
 	filename: "mahou_tsukai"
-	title: "Mahou Tsukai"
+	group: ""
 	icon: {
-		id: "mahoutsukai:morgan"
 		Count: 1b
-		tag: {
-			Damage: 0
-		}
 		ForgeCaps: {
 			Parent: {
 				MAHOUTSUKAI_ATTACK_CAP: 10000.0d
 				MAHOUTSUKAI_ATTACK_DAMAGE: 3.0f
 			}
 		}
+		id: "mahoutsukai:morgan"
+		tag: {
+			Damage: 0
+		}
 	}
-	default_quest_shape: ""
-	default_hide_dependency_lines: false
+	id: "7F93293F2CD8EAEF"
+	order_index: 2
+	quest_links: [ ]
 	quests: [
 		{
-			x: 0.0d
-			y: 0.0d
-			shape: "rsquare"
-			subtitle: "Ultimate power is within your grasp."
 			dependencies: ["4A691BB889286C89"]
 			hide: true
 			id: "4CED8BB70D69C044"
+			shape: "rsquare"
+			subtitle: "Ultimate power is within your grasp."
 			tasks: [{
 				id: "2F17B7CDE621EBE6"
-				type: "item"
 				item: "mahoutsukai:guidebook"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			title: "The \"You're Dead.\" Staff."
-			x: 0.0d
-			y: 2.0d
-			shape: "rsquare"
-			subtitle: "Yeah... you're dead."
 			dependencies: ["4CED8BB70D69C044"]
 			id: "6BFA34D0B5E721F4"
+			shape: "rsquare"
+			subtitle: "Yeah... you're dead."
 			tasks: [{
 				id: "0B08247673189751"
-				type: "item"
 				item: {
-					id: "mahoutsukai:mystic_staff"
 					Count: 1b
+					id: "mahoutsukai:mystic_staff"
 					tag: {
 						Damage: 0
 					}
 				}
+				type: "item"
 			}]
+			title: "The \"You're Dead.\" Staff."
+			x: 0.0d
+			y: 2.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Mahou Tsukai"
 }
