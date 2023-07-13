@@ -1,7 +1,7 @@
 {
     "name": "Repairing Tools",
     "icon": "minecraft:diamond_pickaxe",
-    "category": "patchouli:genesis",
+    "category": "patchouli:genesis/introduction",
     "pages": [
         {
             "type": "patchouli:text",
