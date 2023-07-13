@@ -1,3 +1,12 @@
+// modid shortcuts
+let FIN = (id) => `finality:${id}`
+let MC = (id) => `minecraft:${id}`
+let EXT = (id) => `extendedcrafting:${id}`
+let C = (id) => `create:${id}`
+
+// concrete colors
+let DYE = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
+
 ServerEvents.recipes(event => {
     event.remove({id: 'minecraft:beacon'})
     event.remove({id: 'tconstruct:common/glass/vanilla/beacon'})
@@ -97,12 +106,12 @@ ServerEvents.recipes(event => {
     event.recipes.createSequencedAssembly([
         Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:andesite_alloy"}')
     ], 'finality:dormant_singularity_core', [
-        event.recipes.createFilling('finality:incomplete_andesite_singularity_core', ['finality:incomplete_andesite_singularity_core', Fluid.of('finality:condensed_universal_entropy', 250)]),
-        event.recipes.createDeploying('finality:incomplete_andesite_singularity_core', ['finality:incomplete_andesite_singularity_core', 'create:andesite_alloy_block']),
-        event.recipes.createPressing('finality:incomplete_andesite_singularity_core', 'finality:incomplete_andesite_singularity_core'),
-        event.recipes.createDeploying('finality:incomplete_andesite_singularity_core', ['finality:incomplete_andesite_singularity_core', 'create:andesite_alloy_block']),
-        event.recipes.createPressing('finality:incomplete_andesite_singularity_core', 'finality:incomplete_andesite_singularity_core')
-    ]).transitionalItem('finality:incomplete_andesite_singularity_core').loops(64).id('finality:andesite_alloy_singularity')
+        event.recipes.createFilling([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity'), Fluid.of('finality:condensed_universal_entropy', 250)]),
+        event.recipes.createDeploying([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity'), 'create:andesite_alloy_block']),
+        event.recipes.createPressing([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity')]),
+        event.recipes.createDeploying([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity'), 'create:andesite_alloy_block']),
+        event.recipes.createPressing([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity')])
+    ]).transitionalItem(FIN('incomplete_andesite_singularity')).loops(64).id('finality:andesite_alloy_singularity')
     // sequenced assembly singularities
     event.recipes.createSequencedAssembly([
         Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:blue_ice"}')
@@ -174,151 +183,15 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
         event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
     ]).transitionalItem('extendedcrafting:singularity').loops(16).id('finality:sturdy_sheet_singularity')
-    // concrete singularities
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_black"}')
-    ],'minecraft:black_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:black_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:black_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_gray"}')
-    ],'minecraft:gray_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:gray_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:gray_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_light_gray"}')
-    ],'minecraft:light_gray_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:light_gray_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:light_gray_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_white"}')
-    ],'minecraft:white_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:white_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:white_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_brown"}')
-    ],'minecraft:brown_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:brown_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:brown_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_pink"}')
-    ],'minecraft:pink_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:pink_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:pink_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_cyan"}')
-    ],'minecraft:cyan_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:cyan_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:cyan_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_blue"}')
-    ],'minecraft:blue_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:blue_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:blue_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_lime"}').withChance(100.0)
-    ],'minecraft:lime_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:lime_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:lime_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_green"}').withChance(100.0)
-    ],'minecraft:green_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:green_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:green_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_yellow"}').withChance(100.0)
-    ],'minecraft:yellow_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:yellow_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:yellow_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_purple"}').withChance(100.0)
-    ],'minecraft:purple_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:purple_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:purple_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_magenta"}').withChance(100.0)
-    ],'minecraft:magenta_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:magenta_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:magenta_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_orange"}').withChance(100.0)
-    ],'minecraft:orange_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:orange_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:orange_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_red"}').withChance(100.0)
-    ],'minecraft:red_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:red_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:red_concrete_singularity')
-    event.recipes.createSequencedAssembly([
-        Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:concrete_light_blue"}').withChance(100.0)
-    ],'minecraft:light_blue_concrete',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:light_blue_concrete_powder']),
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 500)]),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(128).id('finality:light_blue_concrete_singularity')
+    DYE.forEach(color => event.recipes.createSequencedAssembly([
+        Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:concrete_${color}"}`)
+    ], MC(`${color}_concrete`), [
+        event.recipes.createDeploying(FIN(`incomplete_concrete_${color}_singularity`), [FIN(`incomplete_concrete_${color}_singularity`), MC(`${color}_concrete_powder`)]),
+        event.recipes.createFilling(FIN(`incomplete_concrete_${color}_singularity`), [FIN(`incomplete_concrete_${color}_singularity`), Fluid.of(MC('water'), 500)]),
+        event.recipes.createPressing(FIN(`incomplete_concrete_${color}_singularity`), FIN(`incomplete_concrete_${color}_singularity`)),
+        event.recipes.createPressing(FIN(`incomplete_concrete_${color}_singularity`), FIN(`incomplete_concrete_${color}_singularity`)),
+        event.recipes.createPressing(FIN(`incomplete_concrete_${color}_singularity`), FIN(`incomplete_concrete_${color}_singularity`))
+    ]).transitionalItem(FIN(`incomplete_concrete_${color}_singularity`)).loops(128).id(`finality:${color}_concrete_singularity`))
     // mechanical crafting singularities
     event.recipes.createMechanicalCrafting(Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:amethyst"}'), [
         ' LLLLLLL ',

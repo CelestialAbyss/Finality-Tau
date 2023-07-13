@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mahou_tsukai"
-	group: ""
+	group: "6855847200ADBE3A"
 	icon: {
 		Count: 1b
 		ForgeCaps: {
@@ -17,7 +17,7 @@
 		}
 	}
 	id: "7F93293F2CD8EAEF"
-	order_index: 2
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{

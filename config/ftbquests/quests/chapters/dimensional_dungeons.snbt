@@ -5,7 +5,7 @@
 	group: "6855847200ADBE3A"
 	icon: "dimdungeons:item_homeward_pearl"
 	id: "526F560FFF3A3C77"
-	order_index: 6
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{

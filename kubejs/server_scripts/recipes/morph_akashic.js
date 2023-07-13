@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
     event.remove({id:'morphtool:tool'})
-    event.remove({id:'akashictome:tome'})
     event.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
@@ -20,25 +19,4 @@ ServerEvents.recipes(event => {
         },
         result: 'morphtool:tool'
     }).id('finality:morph_tool')
-    event.custom({
-        type: 'extendedcrafting:combination',
-        powerCost: 1000,
-        powerRate: 100,
-        input: {
-            item: 'minecraft:book'
-        },
-        ingredients: [
-            Ingredient.of('#forge:bookshelves').toJson(),
-            Ingredient.of('#forge:bookshelves').toJson(),
-            Ingredient.of('#forge:bookshelves').toJson(),
-            Ingredient.of('#forge:bookshelves').toJson(),
-            Ingredient.of('extendedcrafting:luminessence').toJson(),
-            Ingredient.of('extendedcrafting:luminessence').toJson(),
-            Ingredient.of('extendedcrafting:luminessence').toJson(),
-            Ingredient.of('extendedcrafting:luminessence').toJson(),
-        ],
-        result: {
-            item: 'akashictome:tome'
-        }
-    }).id('finality:akashic_tome')
 })

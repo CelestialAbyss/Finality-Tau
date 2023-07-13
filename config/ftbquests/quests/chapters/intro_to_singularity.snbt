@@ -9,13 +9,13 @@
 		click: ""
 		corner: false
 		dev: false
-		height: 3.0d
+		height: 6.65546218487395d
 		hover: [ ]
 		image: "minecraft:textures/gui/presets/packtitle.png"
 		rotation: 0.0d
-		width: 8.0d
+		width: 19.36134453781513d
 		x: 0.0d
-		y: -4.0d
+		y: -4.5d
 	}]
 	order_index: 0
 	quest_links: [ ]
