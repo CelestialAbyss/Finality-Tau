@@ -112,77 +112,87 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity'), 'create:andesite_alloy_block']),
         event.recipes.createPressing([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity')])
     ]).transitionalItem(FIN('incomplete_andesite_singularity')).loops(64).id('finality:andesite_alloy_singularity')
+    // singularity step 3 (new method)
+    event.recipes.createSequencedAssembly([
+        Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:andesite_alloy"}')
+    ], 'finality:dormant_singularity_core', [
+        event.recipes.createFilling([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity'), Fluid.of('finality:condensed_universal_entropy', 250)]),
+        event.recipes.createDeploying([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity'), 'create:andesite_alloy_block']),
+        event.recipes.createPressing([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity')]),
+        event.recipes.createDeploying([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity'), 'create:andesite_alloy_block']),
+        event.recipes.createPressing([FIN('incomplete_andesite_alloy_singularity')], [FIN('incomplete_andesite_alloy_singularity')])
+    ]).transitionalItem(FIN('incomplete_andesite_singularity')).loops(64).id('finality:andesite_alloy_singularity')
     // sequenced assembly singularities
     event.recipes.createSequencedAssembly([
         Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:blue_ice"}')
     ],'minecraft:blue_ice',[
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 25)]),
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:blue_ice']),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(16).id('finality:blue_ice_singularity')
+        event.recipes.createFilling([FIN('incomplete_blue_ice_singularity')], [FIN('incomplete_blue_ice_singularity'), Fluid.of('minecraft:water', 25)]),
+        event.recipes.createDeploying([FIN('incomplete_blue_ice_singularity')], [FIN('incomplete_blue_ice_singularity'),'minecraft:blue_ice']),
+        event.recipes.createPressing([FIN('incomplete_blue_ice_singularity')], [FIN('incomplete_blue_ice_singularity')]),
+        event.recipes.createPressing([FIN('incomplete_blue_ice_singularity')], [FIN('incomplete_blue_ice_singularity')]),
+        event.recipes.createPressing([FIN('incomplete_blue_ice_singularity')], [FIN('incomplete_blue_ice_singularity')])
+    ]).transitionalItem(FIN('incomplete_blue_ice_singularity')).loops(16).id('finality:blue_ice_singularity')
     event.recipes.createSequencedAssembly([
         Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:coarse_dirt"}')
     ],'minecraft:coarse_dirt',[
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:water', 25)]),
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:dirt']),
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:gravel']),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(16).id('finality:coarse_dirt_singularity')
+        event.recipes.createFilling(FIN('incomplete_coarse_dirt_singularity'), [FIN('incomplete_coarse_dirt_singularity'), Fluid.of('minecraft:water', 25)]),
+        event.recipes.createDeploying(FIN('incomplete_coarse_dirt_singularity'), [FIN('incomplete_coarse_dirt_singularity'),'minecraft:dirt']),
+        event.recipes.createDeploying(FIN('incomplete_coarse_dirt_singularity'), [FIN('incomplete_coarse_dirt_singularity'),'minecraft:gravel']),
+        event.recipes.createPressing(FIN('incomplete_coarse_dirt_singularity'), FIN('incomplete_coarse_dirt_singularity')),
+        event.recipes.createPressing(FIN('incomplete_coarse_dirt_singularity'), FIN('incomplete_coarse_dirt_singularity')),
+        event.recipes.createPressing(FIN('incomplete_coarse_dirt_singularity'), FIN('incomplete_coarse_dirt_singularity'))
+    ]).transitionalItem(FIN('incomplete_coarse_dirt_singularity')).loops(16).id('finality:coarse_dirt_singularity')
     event.recipes.createSequencedAssembly([
         Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:sand"}')
     ],'minecraft:sand',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:sand']),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(16).id('finality:sand_singularity')
+        event.recipes.createDeploying(FIN('incomplete_sand_singularity'), [FIN('incomplete_sand_singularity'),'minecraft:sand']),
+        event.recipes.createPressing(FIN('incomplete_sand_singularity'), FIN('incomplete_sand_singularity')),
+        event.recipes.createPressing(FIN('incomplete_sand_singularity'), FIN('incomplete_sand_singularity')),
+        event.recipes.createPressing(FIN('incomplete_sand_singularity'), FIN('incomplete_sand_singularity')),
+        event.recipes.createPressing(FIN('incomplete_sand_singularity'), FIN('incomplete_sand_singularity'))
+    ]).transitionalItem(FIN('incomplete_sand_singularity')).loops(16).id('finality:sand_singularity')
     event.recipes.createSequencedAssembly([
         Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:cobblestone"}')
     ],'minecraft:cobblestone',[
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:lava', 25)]),
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','minecraft:cobblestone']),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(256).id('finality:cobblestone_singularity')
+        event.recipes.createFilling(FIN('incomplete_cobblestone_singularity'), [FIN('incomplete_cobblestone_singularity'), Fluid.of('minecraft:lava', 25)]),
+        event.recipes.createDeploying(FIN('incomplete_cobblestone_singularity'), [FIN('incomplete_cobblestone_singularity'),'minecraft:cobblestone']),
+        event.recipes.createPressing(FIN('incomplete_cobblestone_singularity'), FIN('incomplete_cobblestone_singularity')),
+        event.recipes.createPressing(FIN('incomplete_cobblestone_singularity'), FIN('incomplete_cobblestone_singularity')),
+        event.recipes.createPressing(FIN('incomplete_cobblestone_singularity'), FIN('incomplete_cobblestone_singularity'))
+    ]).transitionalItem(FIN('incomplete_cobblestone_singularity')).loops(256).id('finality:cobblestone_singularity')
     event.recipes.createSequencedAssembly([
         Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:framed_glass"}')
     ],'create:framed_glass',[
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:lava', 25)]),
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','create:framed_glass']),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(32).id('finality:framed_glass_singularity')
+        event.recipes.createFilling(FIN('incomplete_framed_glass_singularity'), [FIN('incomplete_framed_glass_singularity'), Fluid.of('minecraft:lava', 25)]),
+        event.recipes.createDeploying(FIN('incomplete_framed_glass_singularity'), [FIN('incomplete_framed_glass_singularity'),'create:framed_glass']),
+        event.recipes.createPressing(FIN('incomplete_framed_glass_singularity'), FIN('incomplete_framed_glass_singularity')),
+        event.recipes.createPressing(FIN('incomplete_framed_glass_singularity'), FIN('incomplete_framed_glass_singularity')),
+        event.recipes.createPressing(FIN('incomplete_framed_glass_singularity'), FIN('incomplete_framed_glass_singularity'))
+    ]).transitionalItem(FIN('incomplete_framed_glass_singularity')).loops(32).id('finality:framed_glass_singularity')
     event.recipes.createSequencedAssembly([
         Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:precision_mechanism"}').withChance(75.0),
-        Item.of('16x create:crushed_gold_ore').withChance(25.0),
-        Item.of('32x create:cogwheel').withChance(25.0),
-        Item.of('8x create:large_cogwheel').withChance(25.0),
+        Item.of('create:crushed_raw_gold', 16).withChance(25.0),
+        Item.of('create:cogwheel', 32).withChance(25.0),
+        Item.of('create:large_cogwheel', 8).withChance(25.0),
         '32x create:precision_mechanism'
     ],'create:precision_mechanism',[
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','create:cogwheel']),
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','create:large_cogwheel']),
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','extendedcrafting:redstone_nugget']),
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','create:precision_mechanism']),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(16).id('finality:precision_mechanism_singularity')
+        event.recipes.createDeploying(FIN('incomplete_precision_mechanism_singularity'), [FIN('incomplete_precision_mechanism_singularity'),'create:cogwheel']),
+        event.recipes.createDeploying(FIN('incomplete_precision_mechanism_singularity'), [FIN('incomplete_precision_mechanism_singularity'),'create:large_cogwheel']),
+        event.recipes.createDeploying(FIN('incomplete_precision_mechanism_singularity'), [FIN('incomplete_precision_mechanism_singularity'),'extendedcrafting:redstone_nugget']),
+        event.recipes.createDeploying(FIN('incomplete_precision_mechanism_singularity'), [FIN('incomplete_precision_mechanism_singularity'),'create:precision_mechanism']),
+        event.recipes.createPressing(FIN('incomplete_precision_mechanism_singularity'), FIN('incomplete_precision_mechanism_singularity')),
+        event.recipes.createPressing(FIN('incomplete_precision_mechanism_singularity'), FIN('incomplete_precision_mechanism_singularity'))
+    ]).transitionalItem(FIN('incomplete_precision_mechanism_singularity')).loops(16).id('finality:precision_mechanism_singularity')
     event.recipes.createSequencedAssembly([
         Item.of('extendedcrafting:singularity','{Id:"extendedcrafting:sturdy_sheet"}')
     ],'create:sturdy_sheet',[
-        event.recipes.createFilling('extendedcrafting:singularity', ['extendedcrafting:singularity', Fluid.of('minecraft:lava', 25)]),
-        event.recipes.createDeploying('extendedcrafting:singularity', ['extendedcrafting:singularity','create:sturdy_sheet']),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity'),
-        event.recipes.createPressing('extendedcrafting:singularity', 'extendedcrafting:singularity')
-    ]).transitionalItem('extendedcrafting:singularity').loops(16).id('finality:sturdy_sheet_singularity')
+        event.recipes.createFilling(FIN('incomplete_sturdy_sheet_singularity'), [FIN('incomplete_sturdy_sheet_singularity'), Fluid.of('minecraft:lava', 25)]),
+        event.recipes.createDeploying(FIN('incomplete_sturdy_sheet_singularity'), [FIN('incomplete_sturdy_sheet_singularity'),'create:sturdy_sheet']),
+        event.recipes.createPressing(FIN('incomplete_sturdy_sheet_singularity'), FIN('incomplete_sturdy_sheet_singularity')),
+        event.recipes.createPressing(FIN('incomplete_sturdy_sheet_singularity'), FIN('incomplete_sturdy_sheet_singularity')),
+        event.recipes.createPressing(FIN('incomplete_sturdy_sheet_singularity'), FIN('incomplete_sturdy_sheet_singularity')),
+        event.recipes.createPressing(FIN('incomplete_sturdy_sheet_singularity'), FIN('incomplete_sturdy_sheet_singularity'))
+    ]).transitionalItem(FIN('incomplete_sturdy_sheet_singularity')).loops(16).id('finality:sturdy_sheet_singularity')
     DYE.forEach(color => event.recipes.createSequencedAssembly([
         Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:concrete_${color}"}`)
     ], MC(`${color}_concrete`), [
