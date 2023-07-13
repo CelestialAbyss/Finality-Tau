@@ -37,7 +37,7 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"fast"
-resourcePacks:["vanilla","Supplementaries Generated Pack","dynamic_asset_generator:assets","mod_resources","loadmyresources.hiddenpack","quark:emote_resources","file/Enhanced Audio r5.zip","file/Finality Tau - Resources"]
+resourcePacks:["vanilla","dynamic_asset_generator:assets","mod_resources","loadmyresources.hiddenpack","quark:emote_resources","Supplementaries Generated Pack","create:legacy_copper","file/Enhanced Audio r5.zip","file/Finality Tau - Resources"]
 incompatibleResourcePacks:["loadmyresources.hiddenpack","quark:emote_resources"]
 lastServer:localhost
 lang:en_us

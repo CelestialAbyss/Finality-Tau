@@ -263,3 +263,7 @@ key.settingsGUI
 key.selectiveDisplacement
 gui.xaero_pac_key_open_menu
 key.flatcoloredblocks.select_color_menu
+key.modernfix.config
+key.shetiphiancore.tool.next
+key.shetiphiancore.tool.previous
+key.category.vinery
