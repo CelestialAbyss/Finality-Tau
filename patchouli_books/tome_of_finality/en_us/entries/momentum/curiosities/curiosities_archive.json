@@ -41,12 +41,12 @@
         },
         {
             "type": "patchouli:spotlight",
-            "item": "create:diving_helmet",
+            "item": "create:copper_diving_helmet",
             "text": "When used with the Copper Backtank, it can let you breathe underwater and provides better visibility in water. Clear as day!"
         },
         {
             "type": "patchouli:spotlight",
-            "item": "create:diving_boots",
+            "item": "create:copper_diving_boots",
             "text": "Lets you walk on the sea floor. You can also move faster in water."
         }
     ]
