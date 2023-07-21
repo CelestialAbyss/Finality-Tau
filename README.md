@@ -1,4 +1,4 @@
-<p align="center" dir="auto"><a href="https://"><img src="https://i.imgur.com/RDFWq5A.png"></a></p>
+<p align="center" dir="auto"><a href="https://"><img src="https://i.imgur.com/tunjyq8.png"></a></p>
 
 
 ### <p align="center" dir="auto"> Hey! This is the 1.19.2 version. </p>
