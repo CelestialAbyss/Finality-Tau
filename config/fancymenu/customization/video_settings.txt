@@ -56,23 +56,3 @@ customization {
   height = 31
 }
 
-customization {
-  orientation = bottom-centered
-  enable_scrolling = true
-  shadow = true
-  scale = 1.0
-  source = Disabling Mipmap Levels helped improve performance%n%when looking at certain dungeon structures.
-  text_border = 0
-  case_mode = normal
-  source_mode = direct
-  line_spacing = 1
-  x = 175
-  width = 278
-  action = custom_layout_element:fancymenu_customization_item_text
-  actionid = 9ea6f65c-b041-49ce-a147-f71b6814e73e1683584082997
-  y = -232
-  alignment = left
-  base_color = #b1a0ff
-  height = 31
-}
-

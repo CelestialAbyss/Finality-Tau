@@ -15,7 +15,7 @@ customization {
 
 customization {
   [loading_requirement:fancymenu_loading_requirement_is_world_loaded][requirement_mode:if_not][req_id:3380d618-918e-4135-b887-d8e469df2bf61682981914659] = 
-  orientation = mid-centered
+  orientation = top-centered
   channel = music
   audio_source:c6494a00-af0d-4660-918b-d698dddd96101682981602154 = resourcepacks/Finality Tau - Resources/assets/minecraft/sounds/music/menu/menu3.ogg;EXTERNAL_LOCAL;100;0
   audio_source:6bfdbf5c-9d60-4ea1-91b6-82a425709a0e1682981595973 = resourcepacks/Finality Tau - Resources/assets/minecraft/sounds/music/menu/menu2.ogg;EXTERNAL_LOCAL;100;0
@@ -26,8 +26,28 @@ customization {
   width = 50
   action = custom_layout_element:fancymenu_extension:audio_item
   actionid = b3036c15-7a45-4558-a042-16a0b6821d751682981884968
-  y = -25
+  y = 0
   once_per_session = false
   height = 50
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = true
+  shadow = true
+  scale = 3.0
+  source = Set GUI Scale to 2%n%Set GUI Scale to 2%n%Set GUI Scale to 2
+  text_border = 0
+  case_mode = normal
+  [loading_requirement:fancymenu_loading_requirement_is_gui_scale][requirement_mode:if_not][req_id:4984d1af-fb85-4f28-bcf8-00b0cddb3ffe1689904240861] = 2.0
+  source_mode = direct
+  line_spacing = 1
+  x = -256
+  width = 513
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 49aefcc4-6c0c-43cf-9f53-cbefd0f7c30d1689904154090
+  y = -58
+  alignment = centered
+  height = 117
 }
 

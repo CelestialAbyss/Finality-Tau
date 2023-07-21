@@ -41,6 +41,8 @@ ops.json
 patchouli_data.json
 
 # Ignore log files
+*.log
 hs_err_pid24052.log
 hs_err_pid24512.log
 hs_err_pid29072.log
+hs_err_pid11476.log
