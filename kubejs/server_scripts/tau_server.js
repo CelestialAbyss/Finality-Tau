@@ -2,10 +2,6 @@
 
 console.info('Hello, World! (You will see this line every time server resources reload)')
 
-let C = (id) => `create:${id}`
-let MC = (id) => `minecraft:${id}`
-let EXT = (id) => `extendedcrafting:${id}`
-
 let STONEPLATES = ['stone','polished_blackstone']
 let WOODPLATES = ['oak','spruce','birch','jungle','acacia','dark_oak','mangrove','crimson','warped']
 
@@ -19,44 +15,47 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'createaddition:rolling/brass_ingot'})
 	event.remove({id: 'createaddition:rolling/straw'})
 	event.remove({id: 'createaddition:mixing/bioethanol'})
-	event.remove({output: 'projecte:dm_furnace'})
-    event.remove({output: 'projecte:rm_furnace'})
-    event.remove({output: 'waystones:warp_plate'})
-    event.remove({output: 'waystones:attuned_shard'})
-    event.remove({output: 'waystones:warp_dust'})
-	event.shaped('bucket', [
+	event.shaped('minecraft:bucket', [
 		'I I',
 		' I '
 	], {
-		I: C('iron_sheet')
+		I: 'create:iron_sheet'
 	}).id('minecraft:bucket')
-	event.shaped('clock', [
+	event.shaped('minecraft:clock', [
 		' G ',
 		'GMG',
 		' G '
 	], {
-		G: C('golden_sheet'),
-		M: C('precision_mechanism')
+		G: 'create:golden_sheet',
+		M: 'create:precision_mechanism'
 	}).id('minecraft:clock')
-	event.shaped('compass', [
+	event.shaped('minecraft:compass', [
 		' I ',
 		'IRI',
 		' I '
 	], {
-		I: C('iron_sheet'),
-		R: MC('redstone')
+		I: 'create:iron_sheet',
+		R: 'minecraft:redstone'
 	}).id('minecraft:compass')
-	event.shaped('piston', [
+	event.shaped('minecraft:piston', [
 		'WWW',
 		'CEC',
 		'CRC'
 	], {
 		W: '#minecraft:planks',
-		C: 'cobblestone',
+		C: 'minecraft:cobblestone',
 		E: 'create:piston_extension_pole',
-		R: 'redstone'
+		R: 'minecraft:redstone'
 	}).id('minecraft:piston')
-	event.shaped('trident', [
+    event.shaped('minecraft:hopper',[
+        'F F',
+        'FCF',
+        ' F '
+    ],{
+        F: 'create:iron_sheet',
+        C: '#forge:chests/wooden'
+    }).id('minecraft:hopper')
+	event.shaped('minecraft:trident', [
 		'PPP',
 		' A ',
 		' A '
@@ -68,87 +67,87 @@ ServerEvents.recipes(event => {
 		'S',
 		'S'
 	], {
-		S: 'prismarine_shard'
+		S: 'minecraft:prismarine_shard'
 	}).id('finality:trident_pole')
 	event.shapeless('kubejs:trident_prong', [
-		'pointed_dripstone',
-		'prismarine_crystals'
+		'minecraft:pointed_dripstone',
+		'minecraft:prismarine_crystals'
 	]).id('finality:trident_prong')
-	event.recipes.createMixing('finality:omnipotent_alloy', [
-		EXT('the_ultimate_catalyst'),
-		EXT('crystaltine_catalyst'),
-		MC('netherite_ingot'),
-		C('rose_quartz'),
-		C('brass_ingot'),
-		C('andesite_alloy'),
-		MC('diamond'),
-		MC('amethyst_shard'),
-		Fluid.of('finality:condensed_universal_entropy', 500)
+	event.recipes.createMixing('kubejs:omnipotent_alloy', [
+		'extendedcrafting:the_ultimate_catalyst',
+		'extendedcrafting:crystaltine_catalyst',
+		'minecraft:netherite_ingot',
+		'create:rose_quartz',
+		'create:brass_ingot',
+		'create:andesite_alloy',
+		'minecraft:diamond',
+		'minecraft:amethyst_shard',
+		Fluid.of('kubejs:condensed_universal_entropy', 500)
 	]).id('finality:mixing/omnipotent_alloy')
-	event.shaped('finality:final_helmet', [
+	event.shaped('kubejs:final_helmet', [
 		'EEE',
 		'E E'
 	], {
-		E: 'finality:omnipotent_alloy',
+		E: 'kubejs:omnipotent_alloy',
 	}).id('finality:crafting/final_helmet')
-	event.shaped('finality:final_chestplate', [
+	event.shaped('kubejs:final_chestplate', [
 		'E E',
 		'EEE',
 		'EEE'
 	], {
-		E: 'finality:omnipotent_alloy'
+		E: 'kubejs:omnipotent_alloy'
 	}).id('finality:crafting/final_chestplate')
-	event.shaped('finality:final_leggings', [
+	event.shaped('kubejs:final_leggings', [
 		'EEE',
 		'E E',
 		'E E'
 	], {
-		E: 'finality:omnipotent_alloy'
+		E: 'kubejs:omnipotent_alloy'
 	}).id('finality:crafting/final_leggings')
-	event.shaped('finality:final_boots', [
+	event.shaped('kubejs:final_boots', [
 		'E E',
 		'E E'
 	], {
-		E: 'finality:omnipotent_alloy'
+		E: 'kubejs:omnipotent_alloy'
 	}).id('finality:crafting/final_boots')
-	event.shaped('finality:final_sword', [
+	event.shaped('kubejs:final_sword', [
 		'E',
 		'E',
 		'S'
 	], {
-		E: 'finality:omnipotent_alloy',
+		E: 'kubejs:omnipotent_alloy',
 		S: 'extendedcrafting:black_iron_ingot'
 	}).id('finality:crafting/final_sword')
-	event.shaped('finality:final_pickaxe', [
+	event.shaped('kubejs:final_pickaxe', [
 		'EEE',
 		' S ',
 		' S '
 	], {
-		E: 'finality:omnipotent_alloy',
+		E: 'kubejs:omnipotent_alloy',
 		S: 'extendedcrafting:black_iron_ingot'
 	}).id('finality:crafting/final_pickaxe')
-	event.shaped('finality:final_axe', [
+	event.shaped('kubejs:final_axe', [
 		'EE',
 		'ES',
 		' S'
 	], {
-		E: 'finality:omnipotent_alloy',
+		E: 'kubejs:omnipotent_alloy',
 		S: 'extendedcrafting:black_iron_ingot'
 	}).id('finality:crafting/final_axe')
-	event.shaped('finality:final_shovel', [
+	event.shaped('kubejs:final_shovel', [
 		'E',
 		'S',
 		'S'
 	], {
-		E: 'finality:omnipotent_alloy',
+		E: 'kubejs:omnipotent_alloy',
 		S: 'extendedcrafting:black_iron_ingot'
 	}).id('finality:crafting/final_shovel')
-	event.shaped('finality:final_hoe', [
+	event.shaped('kubejs:final_hoe', [
 		'EE',
 		' S',
 		' S'
 	], {
-		E: 'finality:omnipotent_alloy',
+		E: 'kubejs:omnipotent_alloy',
 		S: 'extendedcrafting:black_iron_ingot'
 	}).id('finality:crafting/final_hoe')
 	STONEPLATES.forEach(stone => {
@@ -168,14 +167,14 @@ ServerEvents.recipes(event => {
 		'R'
 	], {
 		G: 'create:golden_sheet',
-		R: 'redstone'
+		R: 'minecraft:redstone'
 	}).id('minecraft:light_weighted_pressure_plate')
 	event.shaped('heavy_weighted_pressure_plate', [
 		'G',
 		'R'
 	], {
 		G: 'create:iron_sheet',
-		R: 'redstone'
+		R: 'minecraft:redstone'
 	}).id('minecraft:heavy_weighted_pressure_plate')
 	let CHARCOAL = ['stripped_palm_log','palm_log','stripped_palm_wood','palm_wood','palm_beam']
 	CHARCOAL.forEach(wood => {
