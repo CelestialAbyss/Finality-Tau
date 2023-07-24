@@ -178,7 +178,8 @@ ServerEvents.recipes(event => {
 	}).id('minecraft:heavy_weighted_pressure_plate')
 	let CHARCOAL = ['stripped_palm_log','palm_log','stripped_palm_wood','palm_wood','palm_beam']
 	CHARCOAL.forEach(wood => {
-		event.blasting('charcoal', `beachparty:${wood}`).id(`finality:beachparty_${wood}/charcoal_compat`)
+		event.smelting('charcoal', `beachparty:${wood}`).id(`finality:smelting/beachparty_${wood}/charcoal_compat`)
+		event.blasting('charcoal', `beachparty:${wood}`).id(`finality:blasting/beachparty_${wood}/charcoal_compat`)
 	})
 })
 

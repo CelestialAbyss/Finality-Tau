@@ -19,7 +19,7 @@
   "forge:silicon": "null",
   "forge:gems/apatite": "thermal:apatite",
   "forge:ingots/brass": "create:brass_ingot",
-  "forge:ingots/silver": "darkerdepths:silver_ingot",
+  "forge:ingots/silver": "galosphere:silver_ingot",
   "forge:dusts/saltpeter": "null",
   "forge:ingots/steel": "thermal:steel_ingot",
   "forge:ingots/enderium": "thermal:enderium_ingot",

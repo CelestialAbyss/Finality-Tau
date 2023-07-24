@@ -287,13 +287,14 @@ ServerEvents.recipes(event => {
         'LLLAAALLL',
         'LLAAAAALL',
         'LAAAAAAAL',
-        'LAAAAAAAL',
+        'LAAACAAAL',
         'LAAAAAAAL',
         'LLAAAAALL',
         'LLLAAALLL',
         ' LLLLLLL '
     ], {
         L: 'minecraft:crying_obsidian',
+        C: 'kubejs:awakened_singularity_core',
         A: 'ars_nouveau:source_gem_block'
     }).id('finality:source_gem_singularity')
 })

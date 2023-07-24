@@ -273,12 +273,12 @@ customization {
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 731
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
   actionid = e12598ce-ba5c-42ef-829f-b44491c8d3281679438679357
-  y = 485
+  y = 520
   height = 9
 }
 
@@ -330,7 +330,7 @@ customization {
   actionid = 6933b74a-1382-4bf0-9292-fd7ae16d24201679852528355
   action = addsplash
   y = 175
-  text = Buzzy Bees!
+  text = Stop.
 }
 
 customization {

@@ -5,7 +5,7 @@ chatColors:true
 chatLinks:true
 chatLinksPrompt:true
 enableVsync:false
-entityShadows:false
+entityShadows:true
 forceUnicodeFont:false
 discrete_mouse_scroll:false
 invertYMouse:false
@@ -25,7 +25,7 @@ fov:0.0
 screenEffectScale:1.0
 fovEffectScale:1.0
 darknessEffectScale:1.0
-gamma:0.0
+gamma:0.5070422535211268
 renderDistance:12
 simulationDistance:12
 entityDistanceScaling:1.0
@@ -58,7 +58,7 @@ chatDelay:0.0
 chatHeightUnfocused:0.4375
 chatScale:1.0
 chatWidth:1.0
-mipmapLevels:0
+mipmapLevels:4
 useNativeTransport:true
 mainHand:"right"
 attackIndicator:1

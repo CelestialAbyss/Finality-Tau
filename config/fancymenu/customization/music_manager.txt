@@ -34,12 +34,15 @@ customization {
 customization {
   orientation = mid-centered
   enable_scrolling = true
+  [loading_requirement:fancymenu_loading_requirement_is_gui_scale][requirement_mode:if_not][group:gui_scale_check_1080p][req_id:12cd9062-03c8-4e4f-b996-722573807eeb1690231978354] = 2.0
   shadow = true
+  [loading_requirement:fancymenu_loading_requirement_is_window_width][requirement_mode:if][group:gui_scale_check_1080p][req_id:68badbcd-f5c1-4eee-96a7-2375a7698e6d1690231993265] = 1920
+  [loading_requirement_group:gui_scale_check_1080p] = [group_mode:and]
   scale = 3.0
+  [loading_requirement:fancymenu_loading_requirement_is_window_height][requirement_mode:if][group:gui_scale_check_1080p][req_id:0223eb04-9a39-421c-a8b5-bdad6eac33261690232031407] = 1080
   source = Set GUI Scale to 2%n%Set GUI Scale to 2%n%Set GUI Scale to 2
   text_border = 0
   case_mode = normal
-  [loading_requirement:fancymenu_loading_requirement_is_gui_scale][requirement_mode:if_not][req_id:4984d1af-fb85-4f28-bcf8-00b0cddb3ffe1689904240861] = 2.0
   source_mode = direct
   line_spacing = 1
   x = -256
