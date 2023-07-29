@@ -267,3 +267,4 @@ key.modernfix.config
 key.shetiphiancore.tool.next
 key.shetiphiancore.tool.previous
 key.category.vinery
+gui.xaero_toggle_tracked_players

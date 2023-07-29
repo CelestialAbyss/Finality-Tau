@@ -7,7 +7,7 @@
 	#The name of the modpack
 	modpackName = "Finality Tau"
 	#The version of the modpack
-	modpackVersion = "04a5"
+	modpackVersion = "04b5"
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false
