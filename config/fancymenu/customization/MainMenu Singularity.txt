@@ -322,15 +322,15 @@ customization {
   basecolor = #FF3D4A
   shadow = true
   rotation = 0.0
-  scale = 1.0
+  scale = 2.0
   refresh = true
   bouncing = true
   vanilla-like = true
-  x = -27
+  x = -54
   actionid = 6933b74a-1382-4bf0-9292-fd7ae16d24201679852528355
   action = addsplash
-  y = 175
-  text = Stop.
+  y = 155
+  text = There is no war in Ba Sing Se.
 }
 
 customization {
@@ -352,29 +352,6 @@ customization {
   alignment = left
   base_color = #FF3D4A
   height = 83
-}
-
-customization {
-  orientation = mid-left
-  enable_scrolling = true
-  shadow = true
-  scale = 1.0
-  source = Set GUI scale to 2 for the best experience!
-  text_border = 0
-  case_mode = normal
-  source_mode = direct
-  line_spacing = 1
-  x = 47
-  width = 242
-  action = custom_layout_element:fancymenu_customization_item_text
-  actionid = 8ae3a904-7db0-487c-9d4f-e2e1ffe292631681331164897
-  y = 83
-  [loading_requirement_group:gui_scale2_detect] = [group_mode:or]
-  alignment = centered
-  [loading_requirement:fancymenu_loading_requirement_is_gui_scale][requirement_mode:if][group:gui_scale2_detect][req_id:8d3d0a4c-c982-4540-84c9-8416c9c826f71682308951084] = >2.0
-  base_color = #FF3D4A
-  height = 19
-  [loading_requirement:fancymenu_loading_requirement_is_gui_scale][requirement_mode:if][group:gui_scale2_detect][req_id:ab0404d4-7c5f-4a64-9a61-668e0b7805991682308971839] = <2.0
 }
 
 customization {
@@ -483,11 +460,11 @@ customization {
 customization {
   path = config/fancymenu/assets/images/packtitle.png
   orientation = top-centered
-  x = -265
-  width = 530
+  x = -236
+  width = 472
   action = addtexture
   actionid = 1ebab45b-e590-41c3-9e55-d6c698e921f71689258362377
-  y = 3
-  height = 182
+  y = 0
+  height = 162
 }
 

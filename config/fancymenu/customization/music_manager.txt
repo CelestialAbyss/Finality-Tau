@@ -36,6 +36,7 @@ customization {
   enable_scrolling = true
   [loading_requirement:fancymenu_loading_requirement_is_gui_scale][requirement_mode:if_not][group:gui_scale_check_1080p][req_id:12cd9062-03c8-4e4f-b996-722573807eeb1690231978354] = 2.0
   shadow = true
+  [loading_requirement:fancymenu_loading_requirement_is_fullscreen][requirement_mode:if][group:gui_scale_check_1080p][req_id:16947718-4253-45ef-83ff-07c4445edfc21690674500206] = 
   [loading_requirement:fancymenu_loading_requirement_is_window_width][requirement_mode:if][group:gui_scale_check_1080p][req_id:68badbcd-f5c1-4eee-96a7-2375a7698e6d1690231993265] = 1920
   [loading_requirement_group:gui_scale_check_1080p] = [group_mode:and]
   scale = 3.0
