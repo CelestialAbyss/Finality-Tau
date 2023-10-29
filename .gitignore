@@ -31,6 +31,9 @@ jei/world/local/
 debug/
 config/WildfireGender/*
 
+# If KubeJS is present
+scripts/*
+
 # Ignore files
 .curseclient
 .qmenu_opened.marker

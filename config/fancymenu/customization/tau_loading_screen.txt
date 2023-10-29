@@ -1,0 +1,62 @@
+type = menu
+
+customization-meta {
+  identifier = de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  original_pos_size_calculation = true
+  x = 175
+  width = 450
+  action = deep_customization_element:drippy_overlay_logo
+  actionid = 10a5f8f3-62cb-4157-ab3e-2399f31461871698056120497
+  y = 169
+  height = 112
+}
+
+customization {
+  custom_color_hex = #000000
+  orientation = top-left
+  hidden = false
+  x = -1000000
+  width = 0
+  action = deep_customization_element:drippy_overlay_background
+  actionid = 49f91024-7932-4a99-8e80-303bec9f40051698056120510
+  y = -1000000
+  height = 0
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  original_pos_size_calculation = true
+  x = 175
+  width = 450
+  action = deep_customization_element:drippy_overlay_progress_bar
+  actionid = ead5c2d9-2173-4a0b-8da4-5abd513b8eee1698056120510
+  y = 369
+  height = 10
+}
+
+customization {
+  path = kubejs/assets/minecraft/textures/gui/presets/packtitle.png
+  orientation = top-centered
+  x = -378
+  width = 757
+  action = addtexture
+  actionid = c56d022f-a8ca-43f6-a534-e7970f9ddeb31698056351193
+  y = 0
+  height = 260
+}
+
