@@ -1,11 +1,11 @@
 {
-  "name": "Diamond",
+  "name": "Soul Sand",
   "colors": [
-    "A6FCE9",
-    "1AACA8"
+    "49372C",
+    "352922"
   ],
   "ingredient": {
-    "item": "minecraft:diamond_block"
+    "item": "minecraft:soul_sand"
   },
   "materialCount": 8192,
   "inUltimateSingularity": true,

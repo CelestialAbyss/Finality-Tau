@@ -1,11 +1,11 @@
 {
-  "name": "Diamond",
+  "name": "Zinc",
   "colors": [
-    "A6FCE9",
-    "1AACA8"
+    "B5D1BA",
+    "7E806C"
   ],
   "ingredient": {
-    "item": "minecraft:diamond_block"
+    "item": "create:zinc_block"
   },
   "materialCount": 8192,
   "inUltimateSingularity": true,

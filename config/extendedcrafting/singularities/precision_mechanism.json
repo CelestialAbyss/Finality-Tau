@@ -1,11 +1,11 @@
 {
-  "name": "Diamond",
+  "name": "Precision Mechanism",
   "colors": [
-    "A6FCE9",
-    "1AACA8"
+    "A7A7A7",
+    "F8CA67"
   ],
   "ingredient": {
-    "item": "minecraft:diamond_block"
+    "item": "create:precision_mechanism"
   },
   "materialCount": 8192,
   "inUltimateSingularity": true,

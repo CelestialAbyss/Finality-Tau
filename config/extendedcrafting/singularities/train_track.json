@@ -1,11 +1,11 @@
 {
-  "name": "Iron",
+  "name": "Train Track",
   "colors": [
-    "E1E1E1",
-    "6C6C6C"
+    "606060",
+    "85573E"
   ],
   "ingredient": {
-    "item": "minecraft:iron_block"
+    "item": "create:track"
   },
   "materialCount": 16384,
   "inUltimateSingularity": true,

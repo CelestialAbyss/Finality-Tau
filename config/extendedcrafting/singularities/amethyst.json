@@ -1,11 +1,11 @@
 {
-  "name": "Iron",
+  "name": "Amethyst",
   "colors": [
-    "E1E1E1",
-    "6C6C6C"
+    "B18CF0",
+    "533888"
   ],
   "ingredient": {
-    "item": "minecraft:iron_block"
+    "item": "minecraft:amethyst_block"
   },
   "materialCount": 16384,
   "inUltimateSingularity": true,

@@ -1,11 +1,11 @@
 {
-  "name": "Iron",
+  "name": "Chocolate",
   "colors": [
-    "E1E1E1",
-    "6C6C6C"
+    "E68A65",
+    "632B35"
   ],
   "ingredient": {
-    "item": "minecraft:iron_block"
+    "item": "create:bar_of_chocolate"
   },
   "materialCount": 16384,
   "inUltimateSingularity": true,

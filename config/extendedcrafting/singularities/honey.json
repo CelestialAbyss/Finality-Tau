@@ -1,11 +1,11 @@
 {
-  "name": "Iron",
+  "name": "Honey",
   "colors": [
-    "E1E1E1",
-    "6C6C6C"
+    "F7DB28",
+    "D26A2A"
   ],
   "ingredient": {
-    "item": "minecraft:iron_block"
+    "item": "minecraft:honey_block"
   },
   "materialCount": 16384,
   "inUltimateSingularity": true,

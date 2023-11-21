@@ -1,11 +1,11 @@
 {
-  "name": "Diamond",
+  "name": "Soul Soil",
   "colors": [
-    "A6FCE9",
-    "1AACA8"
+    "352922",
+    "46EFF4"
   ],
   "ingredient": {
-    "item": "minecraft:diamond_block"
+    "item": "minecraft:soul_soil"
   },
   "materialCount": 8192,
   "inUltimateSingularity": true,

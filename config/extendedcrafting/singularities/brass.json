@@ -1,11 +1,11 @@
 {
-  "name": "Diamond",
+  "name": "Brass",
   "colors": [
-    "A6FCE9",
-    "1AACA8"
+    "F2C16D",
+    "724C2B"
   ],
   "ingredient": {
-    "item": "minecraft:diamond_block"
+    "item": "create:brass_block"
   },
   "materialCount": 8192,
   "inUltimateSingularity": true,

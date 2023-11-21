@@ -1,11 +1,11 @@
 {
-  "name": "Diamond",
+  "name": "Netherite",
   "colors": [
-    "A6FCE9",
-    "1AACA8"
+    "93847D",
+    "24110B"
   ],
   "ingredient": {
-    "item": "minecraft:diamond_block"
+    "item": "minecraft:netherite_block"
   },
   "materialCount": 8192,
   "inUltimateSingularity": true,

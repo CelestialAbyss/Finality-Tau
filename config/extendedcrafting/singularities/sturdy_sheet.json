@@ -1,11 +1,11 @@
 {
-  "name": "Diamond",
+  "name": "Sturdy Sheet",
   "colors": [
-    "A6FCE9",
-    "1AACA8"
+    "6F6D80",
+    "292936"
   ],
   "ingredient": {
-    "item": "minecraft:diamond_block"
+    "item": "create:sturdy_sheet"
   },
   "materialCount": 8192,
   "inUltimateSingularity": true,

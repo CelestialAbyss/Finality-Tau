@@ -1,11 +1,11 @@
 {
-  "name": "Diamond",
+  "name": "Tinted Glass",
   "colors": [
-    "A6FCE9",
-    "1AACA8"
+    "35283B",
+    "272528"
   ],
   "ingredient": {
-    "item": "minecraft:diamond_block"
+    "item": "minecraft:tinted_glass"
   },
   "materialCount": 8192,
   "inUltimateSingularity": true,

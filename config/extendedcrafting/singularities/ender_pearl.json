@@ -1,11 +1,11 @@
 {
-  "name": "Iron",
+  "name": "Ender Pearl",
   "colors": [
-    "E1E1E1",
-    "6C6C6C"
+    "2BCBAF",
+    "032620"
   ],
   "ingredient": {
-    "item": "minecraft:iron_block"
+    "item": "minecraft:ender_pearl"
   },
   "materialCount": 16384,
   "inUltimateSingularity": true,

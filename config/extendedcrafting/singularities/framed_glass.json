@@ -1,11 +1,11 @@
 {
-  "name": "Iron",
+  "name": "Framed Glass",
   "colors": [
-    "E1E1E1",
-    "6C6C6C"
+    "C2DAD9",
+    "73A2AA"
   ],
   "ingredient": {
-    "item": "minecraft:iron_block"
+    "item": "create:framed_glass"
   },
   "materialCount": 16384,
   "inUltimateSingularity": true,

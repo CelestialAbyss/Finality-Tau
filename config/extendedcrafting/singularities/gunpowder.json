@@ -1,11 +1,11 @@
 {
-  "name": "Iron",
+  "name": "Gunpowder",
   "colors": [
-    "E1E1E1",
-    "6C6C6C"
+    "888888",
+    "3D3D3D"
   ],
   "ingredient": {
-    "item": "minecraft:iron_block"
+    "item": "minecraft:gunpowder"
   },
   "materialCount": 16384,
   "inUltimateSingularity": true,

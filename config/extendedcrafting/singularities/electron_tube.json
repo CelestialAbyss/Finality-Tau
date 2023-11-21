@@ -1,11 +1,11 @@
 {
-  "name": "Emerald",
+  "name": "Electron Tube",
   "colors": [
-    "7DF8AC",
-    "008E1A"
+    "FFFFFF",
+    "741A41"
   ],
   "ingredient": {
-    "item": "minecraft:emerald_block"
+    "item": "create:electron_tube"
   },
   "materialCount": 4096,
   "inUltimateSingularity": true,

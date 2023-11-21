@@ -1,11 +1,11 @@
 {
-  "name": "Iron",
+  "name": "Lime Concrete",
   "colors": [
-    "E1E1E1",
-    "6C6C6C"
+    "A9D072",
+    "589E17"
   ],
   "ingredient": {
-    "item": "minecraft:iron_block"
+    "item": "minecraft:lime_concrete"
   },
   "materialCount": 16384,
   "inUltimateSingularity": true,
