@@ -1,0 +1,272 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.TitleScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  restart_on_load = false
+  name = tau_singularity
+  action = animatebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button
+  x = 0
+  action = movebutton
+  y = 22
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 128
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  action = setbuttonlabel
+  value = <shake>Suffer together?</shake>
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376322%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button
+  x = 0
+  action = movebutton
+  y = 44
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 128
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button
+  x = 0
+  action = movebutton
+  y = 66
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 128
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  action = setbuttonlabel
+  value = Back out?
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = bottom-right
+  x = -205
+  action = movebutton
+  y = -167
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 128
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  action = setbuttonlabel
+  value = Play alone?
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376346%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 345
+  width = 270
+  action = deep_customization_element:title_screen_forge_top
+  actionid = ffb8a16f-69f6-4705-863d-37e513252f4f1701340318448
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 122
+  action = deep_customization_element:title_screen_branding
+  actionid = fbbc6523-cf5a-49a7-9c98-e00d8d9423861701340318457
+  y = 453
+  height = 50
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 730
+  width = 229
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = b9000df7-4ec7-4e62-ba41-3544c6cbb9861701340318458
+  y = 485
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 583
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = d4877f48-70a5-4785-90ef-1228331d49791701340318458
+  y = 226
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 343
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = d60793bb-b94a-4f06-b1f4-a6bd031e70ab1701340318458
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 29639433-ce32-485a-995c-370c37080f581701340318458
+  y = 0
+  height = 30
+}
+
+customization {
+  orientation = bottom-centered
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = https://raw.githubusercontent.com/Project-Vyre/finality-fm-live/main/finality-tau-1.20.txt
+  text_border = 0
+  case_mode = normal
+  source_mode = web
+  line_spacing = 1
+  x = -190
+  width = 380
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = a59d5f82-958b-491f-af0b-ce1b9dc1e4f71701340331534
+  y = -128
+  alignment = left
+  base_color = FF3D4A
+  height = 128
+}
+
+customization {
+  orientation = bottom-left
+  enable_scrolling = false
+  shadow = true
+  scale = 1.0
+  source = Forge {"placeholder":"modversion","values":{"modid":"forge"}}%n%Minecraft {"placeholder":"mcversion"}%n%{"placeholder":"loadedmods"} mods loaded%n%
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 1
+  width = 136
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 380d7efd-6c5f-4192-8be4-9f9e976f87d61701340599375
+  y = -34
+  alignment = left
+  base_color = FF3D4A
+  height = 33
+}
+
+customization {
+  orientation = element
+  enable_scrolling = false
+  shadow = false
+  scale = 1.0
+  source = {"placeholder":"realtimehour"}:{"placeholder":"realtimeminute"}:{"placeholder":"realtimesecond"}
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  orientation_element = a59d5f82-958b-491f-af0b-ce1b9dc1e4f71701340331534
+  x = 167
+  width = 83
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 0f076eca-f45f-4e40-862c-a825f586f8311682305358516
+  y = -29
+  alignment = left
+  base_color = #FF3D4A
+  height = 15
+}
+
+customization {
+  path = kubejs/assets/minecraft/textures/gui/presets/packtitle.png
+  orientation = top-centered
+  x = -267
+  width = 534
+  action = addtexture
+  actionid = 6a727a01-fbff-47dc-b174-fb069ad349201701379969051
+  y = 0
+  height = 184
+}
+

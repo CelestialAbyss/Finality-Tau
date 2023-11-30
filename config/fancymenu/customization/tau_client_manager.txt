@@ -1,0 +1,37 @@
+type = menu
+
+customization-meta {
+  identifier = %fancymenu:universal_layout%
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  audio_source:3b03e842-fff0-4f91-af1a-44c2e66b5c821701380835958 = kubejs/assets/minecraft/sounds/music/menu/menu2.ogg;EXTERNAL_LOCAL;100;0
+  audio_source:8579345f-2829-45d9-bbc3-1a1cd063b6d21701382575541 = config/fancymenu/audio/cjbeards_worst_nightmare_instrumental.ogg;EXTERNAL_LOCAL;100;0
+  audio_source:ceb5c218-2d1c-423d-9f59-81207ffbaa2d1701382556395 = config/fancymenu/audio/cjbeards_masquerade_instrumental.ogg;EXTERNAL_LOCAL;100;0
+  orientation = mid-centered
+  audio_source:7290017f-21b0-4c9a-94ae-e431042556d61701382517688 = config/fancymenu/audio/cjbeards_box_office_killer_Instrumental.ogg;EXTERNAL_LOCAL;100;0
+  audio_source:7f37e372-d931-4d66-9140-3b74b07f9a0c1701380802155 = kubejs/assets/minecraft/sounds/music/menu/menu1.ogg;EXTERNAL_LOCAL;100;0
+  audio_source:d890225c-91ce-4e33-b826-b6290390617d1701380849803 = kubejs/assets/minecraft/sounds/music/menu/menu3.ogg;EXTERNAL_LOCAL;100;0
+  audio_source:f9df7e0d-3fcd-4bc7-99ef-f55987880a101701380858206 = kubejs/assets/minecraft/sounds/music/menu/menu4.ogg;EXTERNAL_LOCAL;100;0
+  channel = master
+  audio_source:5815f455-5df2-48a5-b1a5-3384dbe8608b1701382547077 = config/fancymenu/audio/cjbeards_get_away_instrumental.ogg;EXTERNAL_LOCAL;100;0
+  audio_source:eeee136b-7c58-4cc5-8920-75955b8053621701382565611 = config/fancymenu/audio/cjbeards_open_up_instrumental.ogg;EXTERNAL_LOCAL;100;0
+  loop = true
+  x = -25
+  width = 50
+  action = custom_layout_element:fancymenu_extension:audio_item
+  actionid = 9d9b0949-396b-4e28-8560-f34a2d8a5c2d1701344759204
+  y = -25
+  once_per_session = false
+  height = 50
+}
+

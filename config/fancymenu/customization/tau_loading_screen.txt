@@ -9,6 +9,11 @@ customization-meta {
 }
 
 customization {
+  path = kubejs/assets/minecraft/textures/gui/presets/choose_your_poison.png
+  action = texturizebackground
+}
+
+customization {
   keepaspectratio = false
   action = backgroundoptions
 }
@@ -51,12 +56,26 @@ customization {
 
 customization {
   path = kubejs/assets/minecraft/textures/gui/presets/packtitle.png
-  orientation = top-centered
-  x = -378
-  width = 757
+  orientation = bottom-centered
+  x = -239
+  width = 479
   action = addtexture
   actionid = c56d022f-a8ca-43f6-a534-e7970f9ddeb31698056351193
-  y = 0
-  height = 260
+  y = -241
+  height = 164
+}
+
+customization {
+  orientation = bottom-centered
+  background_color = #101010
+  x = -318
+  width = 637
+  bar_color = FF3D4A
+  action = custom_layout_element:drippy_custom_loading_bar
+  actionid = d34df977-6105-417c-a83a-9713f4eab7101701379692544
+  y = -47
+  progress_for_element_orientation = false
+  direction = right
+  height = 8
 }
 
